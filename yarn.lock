@@ -7959,6 +7959,11 @@ vue-owl-carousel@^2.0.3:
     owl.carousel "^2.3.4"
     style-loader "^0.23.0"
 
+vue-parallaxy@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-parallaxy/-/vue-parallaxy-1.1.1.tgz#2f6037f7bffa4b4ca71759924090eca581f5f459"
+  integrity sha512-qZiVpfyRes6Z0Q0DJnsos1WlV7eY478Ek+/s/6CkX67OGCIV5M16X4stQ1AccaEdKvSk+iw8jmfpM/5c6PEFDQ==
+
 vue-responsive@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vue-responsive/-/vue-responsive-1.1.0.tgz#7d5c82038feb8399076f90e9a20ac98473f7ec78"

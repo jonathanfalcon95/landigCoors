@@ -1,7 +1,16 @@
 <template>
-  <div id="app">
-    <h1>miller high life</h1>
-    <router-view></router-view>
+  <div id="app" @scroll="onScroll">
+    <transition name="slide-fade">
+      <div v-if="getAgeGateToken">
+        <router-view></router-view>
+      </div>
+    </transition>
+    <transition name="slide-fade">
+      <div v-if="!getAgeGateToken">
+        <AgeGate />
+      </div>
+    </transition>
+
   </div>
 </template>
 
@@ -9,25 +18,41 @@
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
 
+import AgeGate from '@/containers/AgeGate'
+
 export default {
   name: "app",
   components: {
+    AgeGate
   },
   data() {
-    return {};
+    return {
+      toggler: false  
+    };
   },
   computed: {
-    ...mapGetters([])
+    ...mapGetters([
+      'getAgeGateToken'
+    ])
   },
   methods: {
     ...mapActions({
-    })
+      setScrollMotionAction: 'setScrollMotion',
+      setEdgeScrollingAction: 'setEdgeScrolling',
+      resetEdgeScrollingAction: 'resetEdgeScrolling'
+    }),
+    onScroll ({ target: { scrollTop, clientHeight, scrollHeight }}) {
+      if (scrollTop + clientHeight >= (scrollHeight - 5)) {
+        this.setScrollMotionAction('downEnd');
+      } else if (scrollTop + clientHeight <= (clientHeight + 5)) {
+        this.setScrollMotionAction('upStart');
+      } else {
+        this.setScrollMotionAction('scrolling');
+      }
+    }
   },
   mounted() {
     this.$nextTick(() => {
-      window.addEventListener("resize", this.actualScrollOffset());
-      setTimeout(() => {
-      }, 200);
     });
   }
 };

@@ -1,3 +1,8 @@
 export const state = {
-  loggedIn: false
+  ageGateToken: false, 
+  loggedIn: false,
+  activeSection: 'hero',
+  triggerSpring: 0,
+  scrollMotion: 'upStart',
+  edgeScrolling: 0,
 }

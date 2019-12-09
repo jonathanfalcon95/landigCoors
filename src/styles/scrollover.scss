@@ -1,0 +1,29 @@
+@import "~@/styles/variables.scss";
+
+#scrollover {
+  position: fixed;
+  height: 100%;
+  width: 80vw;
+  right: 0px;
+  top: 0px;
+  background: rgba(100,100,0.5);
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+
+  z-index: $above-all;
+}
+
+svg {
+  display: inline-block;
+}
+
+.wavecontainer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
