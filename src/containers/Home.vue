@@ -5,9 +5,7 @@
       <transition name="home-fade">
         <section id="hero" 
           v-if="getActiveSection === 'hero'">
-          <div class="demo-hero">
-            <h1> hero </h1>
-          </div>
+          <Hero />
         </section>
       </transition>
       <transition name="home-fade">
@@ -33,6 +31,7 @@
 <script>
 import Hamster from "hamsterjs";
 import Parallax from 'vue-parallaxy'
+import Hero from '@/components/Hero'
 
 import parallaxer from '../assets/parallaxer.jpeg';
 
@@ -41,6 +40,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "Home",
   components: {
+    Hero,
     Parallax,
   },
   computed: {
@@ -62,7 +62,7 @@ export default {
       hamster: undefined,
       parallaxerImage: parallaxer,
       placesDirections: {
-        'heroUp': () => { console.log('none') },
+        'heroUp': () => { console.log('') },
         'heroDown': (scrolled) => { 
           this.setActiveSection('herencia');
           document.getElementById('app').scroll(0, scrolled); },
@@ -75,7 +75,7 @@ export default {
         'highlifenowUp': (scrolled) => { 
           this.setActiveSection('herencia');
           document.getElementById('app').scroll(0, scrolled); },
-        'highlifenowDown': () => { console.log('none'); }
+        'highlifenowDown': () => { console.log(''); }
       }
     };
   },
@@ -89,7 +89,7 @@ export default {
       setEdgeScrollingAction: 'setEdgeScrolling'
     }),
     help() {
-      console.log('jelp bro');
+      console.log('');
     },
     onScroll ({ target: { scrollTop, clientHeight, scrollHeight }}) {
     },
@@ -110,7 +110,6 @@ export default {
           this.changeSection('Up');
         }
       } else if(this.getScrollMotion === 'downEnd' && delta < 0) {
-        console.log('will go down', this.getEdgeScrolling);
         this.setEdgeScrollingAction(-1);
         if(this.getEdgeScrolling === -15) {
           this.changeSection('Down');

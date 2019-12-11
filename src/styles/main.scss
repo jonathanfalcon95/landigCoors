@@ -1,7 +1,15 @@
+@import "~@/styles/variables.scss";
+
 body {
   margin: 0px;
   height: 100vh;
   background: black;
+  font-family: $font-din;
+}
+
+p {
+  font-family: $font-dinbold;
+  color: red;
 }
 
 #app {
@@ -18,4 +26,19 @@ body {
 .slide-fade-enter, .slide-fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0.5;
   transform: translateX(300px);
+}
+
+@font-face {
+  font-family: "DINBold";
+  src: url('@~/DINBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "DDIN";
+  src: url('@~/DDIN.ttf') format('truetype');  
+}
+
+@font-face {
+  font-family: "StratumNo1Heavy";
+  src: url('@~/StratumNo1Heavy.ttf') format('truetype');
 }

@@ -57,7 +57,7 @@ export default {
     ...mapActions({
     }),
     help() {
-      console.log('jelp bro');
+      console.log('');
     },
   }
 };
