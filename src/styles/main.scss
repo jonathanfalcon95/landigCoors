@@ -2,8 +2,7 @@
 
 body {
   margin: 0px;
-  height: 100vh;
-  background: black;
+  background: $light-color;
   font-family: $font-din;
 }
 
@@ -11,12 +10,6 @@ p {
   font-family: $font-dinbold;
   color: red;
 }
-
-#app {
-  overflow-y: scroll;
-}
-
-#app::-webkit-scrollbar { width: 0 !important }
 
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
@@ -30,7 +23,8 @@ p {
 
 @font-face {
   font-family: "DINBold";
-  src: url('@~/DINBold.ttf') format('truetype');
+  src: url('@~/DIN-Bold.ttf') format('truetype');  
+
 }
 
 @font-face {

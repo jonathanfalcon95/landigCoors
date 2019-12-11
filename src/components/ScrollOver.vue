@@ -59,16 +59,12 @@ export default {
       } else if(this.getScrollMotion === 'downEnd' && delta > 0) {
         this.resetEdgeScrollingAction();
       }
-      console.log('delta 0>', delta)
     },
     onWheel(event, delta, deltaX, deltaY) {
       event.preventDefault();
-      console.log(delta, deltaX, deltaY, this.getScrollMotion, 'jejeje');
       this.isGoingToReset(deltaY)
     },
-    onScroll ({ target: { scrollTop, clientHeight, scrollHeight }}) {
-      console.log('welp ', scrollTop, clientHeight, scrollHeight);
-      
+    onScroll ({ target: { scrollTop, clientHeight, scrollHeight }}) {      
     }
   }
 };
