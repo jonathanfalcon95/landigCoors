@@ -1,10 +1,10 @@
 <template>
-  <div class="the-beer-container" ref="TheBeer" id="TheBeer">
+  <div class="high-life-now-container" ref="HighLifeNow" id="HighLifeNow">
     <RibbonTitle 
-      title="la cerveza" 
-      subtitle="una lager con un gran sabor en botella transparente"></RibbonTitle>
+      title="WELCOME TO THE HIGH LIFE" 
+      subtitle="QUE HAY DE NUEVO EN EL MUNDO DE HIGH LIFE"></RibbonTitle>
     <div class="content">
-      <div class="the-beer_image-title">
+      <div class="high-life-now_image-title">
         <!-- <img src="" alt=""> -->
         <h1>the champange of beers</h1>
         <p>
@@ -17,6 +17,7 @@
         </p>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -24,11 +25,13 @@
 import { mapActions, mapGetters } from "vuex";
 
 import RibbonTitle from '@/components/RibbonTitle';
+import Footer from '@/components/Footer';
 
 export default {
-  name: "TheBeer",
+  name: "HighLifeNow",
   components: {
-    RibbonTitle
+    RibbonTitle,
+    Footer
   },
   computed: {
     ...mapGetters([""])
@@ -43,5 +46,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// @import "~@/styles/thebeer.scss";
 </style>

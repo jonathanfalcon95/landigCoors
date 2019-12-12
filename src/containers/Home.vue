@@ -18,15 +18,13 @@
       <transition name="home-fade">
         <section id="herencia"
           v-if="getActiveSection === 'herencia'">
-          <h1>herencia herencia herencia herencia</h1>
+          <OurHeritage />
         </section>
       </transition>
       <transition name="home-fade">
         <section id="highlifehoy"
           v-if="getActiveSection === 'highlifehoy'">
-          <div class="demo-hero">
-            <h1> highlifehoy </h1>
-          </div>
+          <HighLifeNow />
         </section>
       </transition>
     </div>
@@ -38,6 +36,9 @@ import Hamster from "hamsterjs";
 import Parallax from 'vue-parallaxy'
 import Hero from '@/components/Hero'
 import TheBeer from '@/components/TheBeer'
+import OurHeritage from '@/components/OurHeritage'
+import HighLifeNow from '@/components/HighLifeNow'
+
 import Menu from '@/components/Menu'
 
 import parallaxer from '../assets/parallaxer.jpeg';
@@ -50,6 +51,8 @@ export default {
     Hero,
     Parallax,
     TheBeer,
+    OurHeritage,
+    HighLifeNow,
     Menu
   },
   computed: {
