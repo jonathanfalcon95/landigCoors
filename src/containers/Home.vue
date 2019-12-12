@@ -10,16 +10,22 @@
         </section>
       </transition>
       <transition name="home-fade">
-        <section id="herencia"
-          v-if="getActiveSection === 'herencia'">
-          <TheBeer />
+        <section id="lacerveza" 
+          v-if="getActiveSection === 'lacerveza'">
+            <TheBeer />
         </section>
       </transition>
       <transition name="home-fade">
-        <section id="highlifenow"
-          v-if="getActiveSection === 'highlifenow'">
+        <section id="herencia"
+          v-if="getActiveSection === 'herencia'">
+          <h1>herencia herencia herencia herencia</h1>
+        </section>
+      </transition>
+      <transition name="home-fade">
+        <section id="highlifehoy"
+          v-if="getActiveSection === 'highlifehoy'">
           <div class="demo-hero">
-            <h1> highlifenow </h1>
+            <h1> highlifehoy </h1>
           </div>
         </section>
       </transition>
@@ -32,6 +38,7 @@ import Hamster from "hamsterjs";
 import Parallax from 'vue-parallaxy'
 import Hero from '@/components/Hero'
 import TheBeer from '@/components/TheBeer'
+import Menu from '@/components/Menu'
 
 import parallaxer from '../assets/parallaxer.jpeg';
 
@@ -42,7 +49,8 @@ export default {
   components: {
     Hero,
     Parallax,
-    TheBeer
+    TheBeer,
+    Menu
   },
   computed: {
     ...mapGetters(
@@ -65,18 +73,24 @@ export default {
       placesDirections: {
         'heroUp': () => { console.log('') },
         'heroDown': (scrolled) => { 
+          this.setActiveSection('lacerveza');
+          document.getElementById('app').scroll(0, scrolled); },
+        'lacervezaUp': (scrolled) => { 
+          this.setActiveSection('hero');
+          document.getElementById('app').scroll(0, scrolled); },
+        'lacervezaDown': (scrolled) => { 
           this.setActiveSection('herencia');
           document.getElementById('app').scroll(0, scrolled); },
         'herenciaUp': (scrolled) => { 
-          this.setActiveSection('hero');
+          this.setActiveSection('lacerveza');
           document.getElementById('app').scroll(0, scrolled); },
         'herenciaDown': (scrolled) => { 
-          this.setActiveSection('highlifenow');
+          this.setActiveSection('highlifehoy');
           document.getElementById('app').scroll(0, scrolled); },
-        'highlifenowUp': (scrolled) => { 
+        'highlifehoyUp': (scrolled) => { 
           this.setActiveSection('herencia');
           document.getElementById('app').scroll(0, scrolled); },
-        'highlifenowDown': () => { console.log(''); }
+        'highlifehoyDown': () => { console.log(''); }
       }
     };
   },

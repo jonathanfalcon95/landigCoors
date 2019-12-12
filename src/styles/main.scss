@@ -7,6 +7,14 @@ body {
   height: 100vh;
 }
 
+h2 {
+  font-family: $font-dinbold;
+}
+
+section {
+  padding-top: 100px;
+}
+
 p {
   font-family: $font-dinbold;
 }
@@ -30,13 +38,13 @@ p {
 
 @font-face {
   font-family: "DINBold";
-  src: url('@~/DIN-Bold.ttf') format('truetype');  
+  src: url('@~/DINBold.otf') format('opentype');
 
 }
 
 @font-face {
   font-family: "DDIN";
-  src: url('@~/DDIN.ttf') format('truetype');  
+  src: url('@~/DINRegular.ttf') format('truetype');  
 }
 
 @font-face {
