@@ -3,15 +3,15 @@
 #homecontainer {
   height: 100vh;
 }
+
 .bigscroller {
   position: relative;
   height: fit-content;
   overflow: hidden;
-  background: orange;
 }
 
 #hero {
-  height: 150vh;
+  min-height: 101vh;
 }
 
 #herencia {

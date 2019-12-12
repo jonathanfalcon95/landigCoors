@@ -1,6 +1,7 @@
 <template>
   <div class="page-container" ref="Home" id="homecontainer">
     <div class="bigscroller">
+      <Menu />
       <div class="above-all">{{getScrollMotion}} - {{getEdgeScrolling}} </div>
       <transition name="home-fade">
         <section id="hero" 
@@ -11,9 +12,7 @@
       <transition name="home-fade">
         <section id="herencia"
           v-if="getActiveSection === 'herencia'">
-          <div class="demo-hero">
-            <h1> herencia </h1>
-          </div>
+          <TheBeer />
         </section>
       </transition>
       <transition name="home-fade">
@@ -32,6 +31,7 @@
 import Hamster from "hamsterjs";
 import Parallax from 'vue-parallaxy'
 import Hero from '@/components/Hero'
+import TheBeer from '@/components/TheBeer'
 
 import parallaxer from '../assets/parallaxer.jpeg';
 
@@ -42,6 +42,7 @@ export default {
   components: {
     Hero,
     Parallax,
+    TheBeer
   },
   computed: {
     ...mapGetters(
