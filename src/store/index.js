@@ -30,7 +30,7 @@ export default new Vuex.Store({
     },
     resetEdgeScrolling(state, value) {
       state.edgeScrolling = value;
-    }
+    },
   },
   getters: {
     isLoggedIn: state => state.loggedIn,

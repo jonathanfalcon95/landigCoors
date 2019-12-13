@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @scroll="onScroll">
+  <div id="app">
     <transition name="slide-fade">
       <div v-if="getAgeGateToken">
         <router-view></router-view>

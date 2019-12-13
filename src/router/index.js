@@ -17,6 +17,11 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/:id',
+      name: 'Routes',
+      component: Home
+    },
+    {
       path: '/',
       name: 'Home',
       component: Home

@@ -3,30 +3,18 @@
     <div class="bigscroller">
       <Menu />
       <div class="above-all">{{getScrollMotion}} - {{getEdgeScrolling}} </div>
-      <transition name="home-fade">
-        <section id="hero" 
-          v-if="getActiveSection === 'hero'">
+        <section id="hero">
           <Hero />
         </section>
-      </transition>
-      <transition name="home-fade">
-        <section id="lacerveza" 
-          v-if="getActiveSection === 'lacerveza'">
+        <section id="lacerveza">
             <TheBeer />
         </section>
-      </transition>
-      <transition name="home-fade">
-        <section id="herencia"
-          v-if="getActiveSection === 'herencia'">
+        <section id="herencia">
           <OurHeritage />
         </section>
-      </transition>
-      <transition name="home-fade">
-        <section id="highlifehoy"
-          v-if="getActiveSection === 'highlifehoy'">
+        <section id="highlifehoy">
           <HighLifeNow />
         </section>
-      </transition>
     </div>
   </div>
 </template>
@@ -47,6 +35,12 @@ import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "Home",
+  props: ['id'],
+  watch: { 
+    getActiveSection: function(newVal, oldVal) {
+      this.scrollToSection(newVal);
+    }
+  },
   components: {
     Hero,
     Parallax,
@@ -67,9 +61,11 @@ export default {
   },
   created() {
     this.help();
+    this.ye = 'yeh';
   },
   data() {
     return {
+      ye: '',
       fixedLel: true,
       hamster: undefined,
       parallaxerImage: parallaxer,
@@ -102,10 +98,14 @@ export default {
   },
   methods: {
     ...mapActions({
+      goToSection: 'goToSection', 
       setActiveSection: 'setActiveSection',
       resetEdgeScrollingAction: 'resetEdgeScrolling',
       setEdgeScrollingAction: 'setEdgeScrolling'
     }),
+    scrollToSection(section) {
+      console.log('section');
+    },
     help() {
       console.log('');
     },
@@ -135,7 +135,7 @@ export default {
       }
     },
     onWheel(event, delta, deltaX, deltaY) {
-      this.isGoingToReset(deltaY);
+      // this.isGoingToReset(deltaY);
     },
   }
 };

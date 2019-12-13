@@ -3,7 +3,7 @@
     :class="{ open: isMenuOpen }">
     <div class="menu-header">
       <div class="menu_icon-container">
-        <img @click="setActiveSection('hero')"
+        <img @click="selectMobileOption('home')"
           :src="mhliconImage" alt />
       </div>
       <div class="hamburguer-container">
@@ -69,6 +69,7 @@ export default {
     },
     selectMobileOption(option) {
       this.setActiveSection(option);
+      this.$router.push({path: option});
       this.openMenu();
     }
   },
