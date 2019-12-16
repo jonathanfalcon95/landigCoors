@@ -1,6 +1,14 @@
 <template>
   <div class="the-beer-container" ref="TheBeer" id="TheBeer">
     <RibbonTitle title="la cerveza" subtitle="una lager con un gran sabor en botella transparente"></RibbonTitle>
+    <div class="mobile-thebeer_logo-row">
+      <div class="thebeer_imagelogo-container">
+        <img :src="millerhighlifelogoImage" alt class="thebeer_imagelogo" />
+      </div>
+      <div class="thebeer_phrase-container">
+        <img :src="millerhighlifephraseImage" alt class="thebeer_phrase" />
+      </div>
+    </div>
     <div class="thebeer_content">
       <div class="thebeer_text-content">
         <div class="thebeer_logo-row">
@@ -41,11 +49,28 @@
         <img :src="millerhighlifebottleImage" alt />
       </div>
     </div>
+    <div class="mobile-table-values">
+      <table>
+        <tbody>
+          <tr>
+            <th class="abv-val">ABV</th>
+            <th class="ibu-val">IBU</th>
+            <th class="cal-val">Calorías</th>
+          </tr>
+          <tr>
+            <td class="abv-num">4.6%</td>
+            <td class="ibu-num">7</td>
+            <td class="cal-num">141</td>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
 <script>
-import millerhighlifelogo from "@/assets/miller-high-life-centered-logo.jpeg";
+import millerhighlifelogo from "@/assets/miller-high-life-centered-logo.png";
 import millerhighlifephrase from "@/assets/miller-high-logo-phrase.png";
 import millerhighlifebottle from "@/assets/MHL_Bottles_Single.png";
 
