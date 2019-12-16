@@ -47,8 +47,9 @@
 
 .the-beer_image-title {
   width: 60%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
   img {
     width: 100%;
     max-width: 250px;
