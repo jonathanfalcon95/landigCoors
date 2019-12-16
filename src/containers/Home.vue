@@ -3,7 +3,7 @@
     <div class="bigscroller">
       <Menu />
       <div class="above-all">{{getScrollMotion}} - {{getEdgeScrolling}} </div>
-        <section id="hero">
+        <section id="home">
           <Hero />
         </section>
         <section id="lacerveza">
@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import Hamster from "hamsterjs";
 import Parallax from 'vue-parallaxy'
 import Hero from '@/components/Hero'
 import TheBeer from '@/components/TheBeer'
@@ -30,6 +29,8 @@ import HighLifeNow from '@/components/HighLifeNow'
 import Menu from '@/components/Menu'
 
 import parallaxer from '../assets/parallaxer.jpeg';
+
+import VueScrollTo from 'vue-scrollto'
 
 import { mapActions, mapGetters } from "vuex";
 
@@ -60,17 +61,15 @@ export default {
     )
   },
   created() {
-    this.help();
-    this.ye = 'yeh';
   },
   data() {
     return {
-      ye: '',
       fixedLel: true,
-      hamster: undefined,
       parallaxerImage: parallaxer,
       placesDirections: {
-        'heroUp': () => { console.log('') },
+        'heroUp': () => { 
+          this.setActiveSection('lacerveza');
+         },
         'heroDown': (scrolled) => { 
           this.setActiveSection('lacerveza');
           document.getElementById('app').scroll(0, scrolled); },
@@ -94,7 +93,7 @@ export default {
     };
   },
   mounted() {
-    this.initHamster();
+    this.checkRouteForInitialScroll();
   },
   methods: {
     ...mapActions({
@@ -103,40 +102,43 @@ export default {
       resetEdgeScrollingAction: 'resetEdgeScrolling',
       setEdgeScrollingAction: 'setEdgeScrolling'
     }),
-    scrollToSection(section) {
-      console.log('section');
-    },
-    help() {
-      console.log('');
-    },
-    onScroll ({ target: { scrollTop, clientHeight, scrollHeight }}) {
-    },
-    changeSection(direction) {
-      let scrollOffset = document.getElementById('app').scrollHeight;
-      let scrolled = direction === 'Up' ? scrollOffset : 0;
-      this.placesDirections[`${this.getActiveSection}${direction}`](scrolled);
-      this.resetEdgeScrollingAction(direction);
-    },
-    initHamster() {
-      this.hamster = Hamster(this.$refs.Home);
-      this.hamster.wheel(this.onWheel);
-    },
-    isGoingToReset(delta) {
-      if(this.getScrollMotion === 'upStart' && delta > 0) {
-        this.setEdgeScrollingAction(1);
-        if(this.getEdgeScrolling === 15) {
-          this.changeSection('Up');
-        }
-      } else if(this.getScrollMotion === 'downEnd' && delta < 0) {
-        this.setEdgeScrollingAction(-1);
-        if(this.getEdgeScrolling === -15) {
-          this.changeSection('Down');
-        }
+    checkRouteForInitialScroll() {
+      let route = this.$route.path.replace('/', '')
+      if(route != '') {
+        VueScrollTo.scrollTo(`#${route}`, 1, {
+            container: '#app',
+            easing: 'linear',
+            offset: 0,
+            force: true,
+            cancelable: true,
+            onStart: function(element) {},
+            onDone: function(element) {},
+            onCancel: function() {},
+            x: false,
+            y: true
+          });
       }
     },
-    onWheel(event, delta, deltaX, deltaY) {
-      // this.isGoingToReset(deltaY);
-    },
+    scrollToSection(section) {
+      VueScrollTo.scrollTo(`#${section}`, 200, {
+        container: '#app',
+        easing: 'ease-in',
+        offset: 0,
+        force: true,
+        cancelable: true,
+        onStart: function(element) {
+          // scrolling started
+        },
+        onDone: function(element) {
+          // scrolling is done
+        },
+        onCancel: function() {
+          // scrolling has been interrupted
+        },
+        x: false,
+        y: true
+      });
+    }
   }
 };
 </script>

@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="age-gate-footer">
-      <h1>yeah</h1>
+      <h1></h1>
     </div>
   </div>
 </template>

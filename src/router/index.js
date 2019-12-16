@@ -7,11 +7,13 @@ import Test from '@/containers/Test'
 import responsive from 'vue-responsive'
 import VueObserveVisibility from 'vue-observe-visibility'
 import checkView from 'vue-check-view'
+import VueScrollTo from 'vue-scrollto'
 
-Vue.use(Router)
-Vue.use(responsive)
-Vue.use(VueObserveVisibility)
 Vue.use(checkView)
+Vue.use(responsive)
+Vue.use(Router)
+Vue.use(VueObserveVisibility)
+Vue.use(VueScrollTo)
 
 export default new Router({
   mode: 'history',
