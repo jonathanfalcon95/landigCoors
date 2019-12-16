@@ -1,0 +1,120 @@
+@import "~@/styles/variables.scss";
+
+.the-beer-container {
+  .thebeer_content {
+    padding: 0rem 1rem;
+    width: 70%;
+    margin-left: calc(30%/2);
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    
+  }
+}
+
+.thebeer_text-content {
+  width: 80%;
+  p {
+    font-family: $font-din;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 60px;
+    color: $gray-color;
+  }
+}
+.thebeer_logo-row {
+  display: flex;
+  // flex-wrap: nowrap;
+  width: 100%;
+  .thebeer_imagelogo-container {
+    width: 20%;
+    margin-right: 2rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .thebeer_phrase-container {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+.the-beer_image-title {
+  width: 60%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.table-values {
+  table {
+    border: 2px solid $darker-color;
+    font-size: 1.25rem;
+    margin: 0px !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td, th {
+    padding: 0.5rem 1rem;
+    font-family: $font-dinbold;
+    border-left: 2px solid $darker-color;
+    text-align: center;
+  }
+  td {
+    font-size: 2rem;
+    font-family: $font-din;
+    border-bottom: 2px solid $darker-color;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .the-beer-container {
+    .thebeer_content {
+      padding: 0rem 15px;
+      width: calc(100% - 30px);
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+  }  
+
+  .thebeer_text-content {
+    width: 50%;
+    p {
+      font-family: $font-din;
+      width: 100%;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+  .thebeer_logo-row {
+    .thebeer_imagelogo-container {
+      width: 80%;
+      margin-right: 0rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .thebeer_phrase-container {
+      display: none;
+    }
+  }
+
+  .table-values {
+    table {
+      font-size: 1rem;
+    }
+    td, th {
+    }
+    td {
+      font-size: 1.2rem;
+    }
+  }
+}
