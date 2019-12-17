@@ -8,6 +8,9 @@ import responsive from 'vue-responsive'
 import VueObserveVisibility from 'vue-observe-visibility'
 import checkView from 'vue-check-view'
 import VueScrollTo from 'vue-scrollto'
+import VueCarousel from 'vue-carousel';
+
+Vue.use(VueCarousel);
 
 Vue.use(checkView)
 Vue.use(responsive)
