@@ -11,16 +11,15 @@
           </div>
           <div class="subtitle">
             <h2>
-              high life was born in 1903
-              <br />
-              how about you?
+              high life nació 
+              en 1903 y tú?
             </h2>
           </div>
           <div class="form-row">
-            <input type="text" placeholder="DD" />
-            <input type="text" placeholder="MM" />
-            <input type="text" placeholder="YY" />
-            <button @click="setAgeGateTokenAction(true)">submit</button>
+            <input type="text" maxlength="2" placeholder="DD" v-on:keyup="focusNextSibling($event)"/>
+            <input type="text" maxlength="2" placeholder="MM" v-on:keyup="focusNextSibling($event)"/>
+            <input type="text" maxlength="4" placeholder="YYYY" v-on:keyup="focusNextSibling($event)"/>
+            <input type="submit" text="enviar" class="submit-button" @click="setAgeGateTokenAction(true)">
           </div>
         </div>
       </div>
@@ -53,7 +52,17 @@ export default {
   methods: {
     ...mapActions({
       setAgeGateTokenAction: "setAgeGateToken"
-    })
+    }),
+    focusNextSibling(event) {
+      const element = event.target;
+      if (
+        element &&
+        element.value &&
+        element.value.length === event.target.maxLength
+      ) {
+        event.target.nextElementSibling.focus();
+      }
+    },
   },
   mounted() {
     this.$nextTick(() => {});

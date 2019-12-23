@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   width: 45%;
-  background: green;
+  max-width: 320px;
   .title-container {
     width: 100%;
     img {
@@ -60,18 +60,62 @@
     margin-bottom: 0px;
     font-family: $font-dinbold;
     font-weight: normal;
+    color: $dark-color;
+    margin-bottom: 1rem;
   }
 }
 
-input {
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;	
+}
+
+input:focus, button:focus
+{
+	outline:0;
+}
+
+input, .submit-button {
   border-color: #84754e;
   border-radius: 0px;
   border-width: 4px;
   background-color: transparent;
-  width: 60px;
   text-align: center;
+  height: 100%;
+  color: #84754e;
+  font-size: 1rem;
+  width: 4rem;
+  border-style:solid;
+  padding: 0px !important;
+  text-transform: uppercase;
+  // margin-right: 5px;
+}
+
+
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px !important;
+  width: 5rem;
+  height: 53px !important;
+}
+
+.form-row {
   height: 45px;
-  padding-right: 0px;
-  padding-left: 0px;
-  color: $darker-color;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
