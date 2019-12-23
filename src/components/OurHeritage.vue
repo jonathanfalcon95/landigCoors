@@ -135,10 +135,10 @@ export default {
 
 .VueCarousel-navigation {
   z-index: 100;
-  >>> button.VueCarousel-navigation-prev {
+  button.VueCarousel-navigation-prev {
     left: 30px !important;
   }
-  >>> button.VueCarousel-navigation-next {
+  button.VueCarousel-navigation-next {
     right: 30px !important;
   }
 }
