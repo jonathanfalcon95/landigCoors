@@ -52,6 +52,23 @@
   background-color: $dark-color;
   width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .privacy-container {
+    display: flex;
+    flex-direction: row;
+    h4 {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      color: $white-color;
+      font-size: 1rem;
+      margin-right: 1rem;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .subtitle {
@@ -108,14 +125,88 @@ input, .submit-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 0px !important;
+  padding: 5px 5px !important;
   width: 5rem;
   height: 53px !important;
 }
+
 
 .form-row {
   height: 45px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  &.hasError {
+    input {
+      border-color: #a74941 !important;
+      color: #a74941;
+    }
+  }
+}
+
+.AgeGate-warning {
+  color: #a74941;
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .width-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-container {
+    width: 35%;
+    
+    margin-right: 0rem;
+  }
+
+  .form-container {
+    max-width: 400px;
+    width: 60%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .width-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo-container {
+    width: 50%;
+    
+    margin-right: 0rem;
+  }
+
+  .title-container {
+    width: 50%;
+  }
+  .form-container {
+    width: 85%;
+  }
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .AgeGate-warning-message {
+    text-align: center;
+  }
+
+  .age-gate-footer {
+    .privacy-container {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        margin: 5px 0px;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+      .bar {
+        display: none;
+      }
+    }
+  }
 }

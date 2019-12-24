@@ -7,43 +7,97 @@
         </div>
         <div class="form-container">
           <div class="title-container">
-            <img :src="mhlphraseImage" alt="">
+            <img :src="mhlphraseImage" alt />
           </div>
           <div class="subtitle">
             <h2>
-              high life nació 
+              high life nació
               en 1903 y tú?
             </h2>
           </div>
-          <div class="form-row">
-            <input type="text" maxlength="2" placeholder="DD" v-on:keyup="focusNextSibling($event)"/>
-            <input type="text" maxlength="2" placeholder="MM" v-on:keyup="focusNextSibling($event)"/>
-            <input type="text" maxlength="4" placeholder="YYYY" v-on:keyup="focusNextSibling($event)"/>
-            <input type="submit" text="enviar" class="submit-button" @click="setAgeGateTokenAction(true)">
+          <div class="form-row" :class="showWarning ? 'hasError' : '' ">
+            <input
+              type="text"
+              maxlength="2"
+              placeholder="DD"
+              v-on:keyup="focusNextSibling($event)"
+              v-model="day"
+            />
+            <input
+              type="text"
+              maxlength="2"
+              placeholder="MM"
+              v-on:keyup="focusNextSibling($event)"
+              v-model="month"
+            />
+            <input
+              type="text"
+              maxlength="4"
+              placeholder="YYYY"
+              v-on:keyup="focusNextSibling($event)"
+              v-model="year"
+            />
+            <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
+          </div>
+          <div class="AgeGate-warning" v-if="showWarning">
+            <div class="AgeGate-warning-wrapper">
+              <p class="AgeGate-warning-message">Debes ser mayor de edad para navegar este sitio</p>
+            </div>
+          </div>
+          <div class="AgeGate-warning" v-if="false">
+            <div class="AgeGate-warning-wrapper">
+              <p
+                class="AgeGate-warning-message"
+              >Debes ser mayor de edad para navegar y tu edad es privada en facebook</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="age-gate-footer">
-      <h1></h1>
+      <div class="privacy-container">
+        <h4 class="privacy"
+        @click="popUpModal('terms')">terminos y condiciones</h4>
+        <h4 class="privacy bar">|</h4>
+        <h4 class="privacy"
+        @click="popUpModal('politics')">politicas de privacidad</h4>
+        <h4 class="privacy bar">|</h4>
+        <h4 class="privacy">evita el exceso</h4>
+      </div>
     </div>
+    <Modal 
+      v-if="showModal"
+      v-bind:wichModal="wichModal"
+      @close="showModal = false"/>
   </div>
 </template>
 
 <script>
+import Moment from "moment";
+
 import mhllogo from "@/assets/miller-high-life-logo.png";
 import mhlphrase from "@/assets/miller-high-logo-phrase.png";
 
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
 
+import Modal from '@/components/Modal'
+
 export default {
   name: "AgeGate",
-  components: {},
+  components: {
+    Modal
+  },
   data() {
     return {
+      day: undefined,
+      month: undefined,
+      year: undefined,
+      showWarning: false,
       mhllogoImage: mhllogo,
-      mhlphraseImage: mhlphrase
+      mhlphraseImage: mhlphrase,
+      showModal: false,
+      wichModal: 'terms'
     };
   },
   computed: {
@@ -53,6 +107,32 @@ export default {
     ...mapActions({
       setAgeGateTokenAction: "setAgeGateToken"
     }),
+    popUpModal(modalType) {
+      this.showModal = true;
+      this.wichModal = modalType;
+    },
+    hideWarning() {
+      this.showWarning = false;
+    },
+    normalLogin(event) {
+      console.log("yeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+      // event.preventDefault();
+      const { day, month, year } = this;
+      if (day && day !== "" && month && month !== "" && year && year !== "") {
+        const bDay = Moment(`${day}/${month}/${year}`, "DD/MM/YYYY");
+        const today = Moment();
+        const age = today.diff(bDay, "years");
+        if (isNaN(age) || age < 18) {
+          console.log("wajapen false");
+          this.showWarning = true;
+        } else {
+          setTimeout(() => {
+            console.log("wajapen true");
+            this.setAgeGateTokenAction(true);
+          }, 100);
+        }
+      }
+    },
     focusNextSibling(event) {
       const element = event.target;
       if (
@@ -62,7 +142,7 @@ export default {
       ) {
         event.target.nextElementSibling.focus();
       }
-    },
+    }
   },
   mounted() {
     this.$nextTick(() => {});
