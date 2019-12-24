@@ -115,19 +115,15 @@ export default {
       this.showWarning = false;
     },
     normalLogin(event) {
-      console.log("yeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-      // event.preventDefault();
       const { day, month, year } = this;
       if (day && day !== "" && month && month !== "" && year && year !== "") {
         const bDay = Moment(`${day}/${month}/${year}`, "DD/MM/YYYY");
         const today = Moment();
         const age = today.diff(bDay, "years");
         if (isNaN(age) || age < 18) {
-          console.log("wajapen false");
           this.showWarning = true;
         } else {
           setTimeout(() => {
-            console.log("wajapen true");
             this.setAgeGateTokenAction(true);
           }, 100);
         }
