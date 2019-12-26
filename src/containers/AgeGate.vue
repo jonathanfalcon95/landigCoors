@@ -17,6 +17,7 @@
           </div>
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">
             <input
+              ref="day"
               type="text"
               maxlength="2"
               placeholder="DD"
@@ -24,6 +25,7 @@
               v-model="day"
             />
             <input
+              ref="month"
               type="text"
               maxlength="2"
               placeholder="MM"
@@ -31,6 +33,7 @@
               v-model="month"
             />
             <input
+              ref="year"
               type="text"
               maxlength="4"
               placeholder="YYYY"
@@ -141,7 +144,8 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(() => {});
+    this.$nextTick(() => {
+    });
   }
 };
 </script>

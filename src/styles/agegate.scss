@@ -100,7 +100,8 @@ textarea
 
 input:focus, button:focus
 {
-	outline:0;
+  outline:0;
+  border-color: $dark-color;
 }
 
 input, .submit-button {

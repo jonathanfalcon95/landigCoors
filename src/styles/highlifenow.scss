@@ -40,9 +40,7 @@
 
 p.red-button {
   max-width: 500px;
-  margin-right: auto;
   margin-bottom: 50px;
-  margin-left: auto;
   color: #FFF;
   font-size: 18px;
   width: 55%;
@@ -95,6 +93,7 @@ p.red-button {
       }
       .red-button {
         margin-bottom: 80px;
+        width: 80%;
       }
     }
   }

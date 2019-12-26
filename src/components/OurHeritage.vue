@@ -15,7 +15,7 @@
           :navigationEnabled="true"
           >
           <slide>
-            <div class="slide-container">
+            <div ref="firstcontainer" class="slide-container">
               <div class="image-in-carousel">
                 <img :src="carousel1Image" alt />
               </div>
@@ -85,6 +85,12 @@ export default {
   },
   methods: {
     ...mapActions({})
+  },
+  mounted() {
+    setTimeout(() => {
+      this.$refs.firstcontainer.click()
+      console.log('mounted', 'clicked');
+    }, 1500)
   }
 };
 </script>
