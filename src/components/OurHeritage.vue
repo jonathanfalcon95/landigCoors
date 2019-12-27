@@ -1,6 +1,9 @@
 <template>
   <div class="our-heritage-container" ref="OurHeritage" id="OurHeritage">
     <div class="content">
+      <div class="responsive ribbon-container">
+        <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+      </div>
       <div class="carosuel-content">
         <carousel
           :per-page="1" 
@@ -24,7 +27,7 @@
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">UNA PROMESA GUARDADA DESDE 1903</h3>
-                  <img src alt class="golden-line" />
+                  <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     A inicios de 1900s, la mayoría de los estadounidenses disfrutaban de su cerveza
                     en un bar o la llevaban a su casa en cubetas.
@@ -50,7 +53,7 @@
                   </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">LA CHICA EN LA LUNA</h3>
-                  <img src alt class="golden-line" />
+                  <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     Ella se sienta en una luna creciente en medio de un cielo 
                     lleno de estrellas. Aunque no hay registro de como se creo 
@@ -76,7 +79,7 @@
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">POPULARIDAD CRECIENTE</h3>
-                  <img src alt class="golden-line" />
+                  <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     En la segunda guerra mundial, la cerveza en botella 
                     era muy común. A medida que los estadounidenses buscaban 
@@ -104,7 +107,7 @@
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">NUESTROS PROPIOS LUPULOS</h3>
-                  <img src alt class="golden-line" />
+                  <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     A medida de que los cerveceros aprendían acerca de la 
                     susceptibilidad de los aceites del lúpulo a la luz, 
@@ -130,7 +133,7 @@
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">SI TU TIENES TIEMPO…</h3>
-                  <img src alt class="golden-line" />
+                  <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     Quizá mas que otra cerveza, High Life se ha 
                     asociado con la idea de una recompensa por un 
@@ -241,18 +244,26 @@ export default {
 }
 .VueCarousel-dot-container {
   margin-left: 50vw !important;
+  margin-bottom: 10px !important;
 }
 
 .VueCarousel-dot {
   background: transparent !important;
   border: 1px solid $white-color !important;
   padding: 0px !important;
-  margin: 10px 5px !important;
+  margin: 15px 5px !important;
   &:focus, &:active {
     outline: none;
   }
   &.VueCarousel-dot--active {
     background: $white-color !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .VueCarousel-dot-container {
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
   }
 }
 </style>

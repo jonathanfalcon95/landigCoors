@@ -23,7 +23,7 @@ p {
   overflow-y: scroll;
 }
 
-// #app::-webkit-scrollbar { width: 10px !important }
+#app::-webkit-scrollbar { width: 0px !important }
 
 
 /* Enter and leave animations can use different */
