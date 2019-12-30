@@ -2,7 +2,7 @@
   <div class="page-container" ref="Home" id="homecontainer">
     <div class="bigscroller">
       <Menu />
-      <div class="above-all">{{getScrollMotion}} - {{getEdgeScrolling}} </div>
+      <MobileMenu />
         <section id="home">
           <Hero />
         </section>
@@ -27,6 +27,7 @@ import OurHeritage from '@/components/OurHeritage'
 import HighLifeNow from '@/components/HighLifeNow'
 
 import Menu from '@/components/Menu'
+import MobileMenu from '@/components/MobileMenu'
 
 import parallaxer from '../assets/parallaxer.jpeg';
 
@@ -48,7 +49,8 @@ export default {
     TheBeer,
     OurHeritage,
     HighLifeNow,
-    Menu
+    Menu,
+    MobileMenu
   },
   computed: {
     ...mapGetters(
