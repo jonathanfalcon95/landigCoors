@@ -11,6 +11,25 @@
   z-index: 9997;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  #menu-container {
+    display: none;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  .social-icon {
+    height: 2rem;
+    width: 2rem;
+    img {
+       width: 2rem;
+       height: auto;
+    }
+  }
+}
+
 .menu-header {
   height: 100%;
   .menu_icon-container {
@@ -48,7 +67,6 @@
 }
 
 .menu-social-icons-container {
-  background: red;
   display: flex;
   margin-right: 30px;
   width: fit-content;
@@ -58,7 +76,7 @@
     justify-content: center;
     align-items: center;
     a {
-      margin-right: 20px;
+      margin-right: 10px;
     }
   }
 }
