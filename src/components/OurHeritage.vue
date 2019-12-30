@@ -14,6 +14,8 @@
           :paginationPosition="'bottom-overlay'"
           :navigationEnabled="true"
           :paginationPadding="5"
+          :navigationNextLabel="'►'"
+          :navigationPrevLabel="'◄'"
           >
           <!-- slide 1  -->
           <slide>
