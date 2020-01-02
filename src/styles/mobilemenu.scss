@@ -43,6 +43,12 @@
   }
 }
 
+.mobile-menu-option {
+  &.active {
+    text-decoration: underline;
+  }  
+}
+
 #nav-icon3 span:nth-child(1) {
   top: 5px;
 }
