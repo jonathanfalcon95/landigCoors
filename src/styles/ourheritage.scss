@@ -58,13 +58,22 @@
   }
 }
 
-.responsive.ribbon-container {
+.responsive.ribbon-container, .responsive.title-in-carousel {
   display: none;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .responsive.ribbon-container {
+  .responsive.ribbon-container, .responsive.title-in-carousel {
     display: block;
+  }
+  .responsive.title-in-carousel {
+    font-size: 1.35rem !important;
+    &.no-margin {
+      margin-bottom: 0px;
+    }
+  }
+  .desktop.title-in-carousel {
+    display: none;
   }
   .slide-container {
     display: flex;
@@ -83,11 +92,13 @@
       width: 100%;
       .text-row {
         h3 {
+          font-size: 1.5rem;
         }
         .golden-line {
         }
         p {
           margin-bottom: 3rem;
+          font-size: 1rem;
         }
       }
     }

@@ -111,10 +111,11 @@
   .thebeer_text-content {
     width: 50%;
     p {
+      margin-top: 5px;
       margin-bottom: 2rem;
       font-family: $font-din;
       width: 100%;
-      font-size: 1rem;
+      font-size: 0.98rem;
       text-align: left;
     }
   }
