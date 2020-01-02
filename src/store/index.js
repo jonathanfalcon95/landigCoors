@@ -6,6 +6,29 @@ Vue.use(Vuex)
 import { state } from './state';
 import { actions } from './actions';
 
+import VueScrollTo from 'vue-scrollto';
+
+const justScrollTo = (section) => {
+  VueScrollTo.scrollTo(`#${section}`, 400, {
+    container: '#app',
+    easing: 'ease-in',
+    offset: 0,
+    force: true,
+    cancelable: true,
+    onStart: function(element) {
+      // scrolling started
+    },
+    onDone: function(element) {
+      // scrolling is done
+    },
+    onCancel: function() {
+      // scrolling has been interrupted
+    },
+    x: false,
+    y: true
+  });
+}
+
 export default new Vuex.Store({
   state,
   actions,
@@ -16,8 +39,11 @@ export default new Vuex.Store({
     setAgeGateToken(state) {
       state.ageGateToken = true;
     },
-    setActiveSection(state, section) {
-      state.activeSection = section;
+    setActiveSection(state, payload) {
+      state.activeSection = payload.section;
+      if(payload.willScroll) {
+        justScrollTo(payload.section);
+      }
     },
     setScrollMotion(state, motion) {
       state.scrollMotion = motion;

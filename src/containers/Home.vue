@@ -4,15 +4,22 @@
       <Menu />
       <MobileMenu />
         <section id="home">
+          <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
           <Hero />
+          <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
         </section>
         <section id="lacerveza">
-            <TheBeer />
+          <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
+          <TheBeer />
+          <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
         </section>
         <section id="herencia">
+          <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
           <OurHeritage />
+          <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
         </section>
         <section id="highlifehoy">
+          <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
           <HighLifeNow />
         </section>
     </div>
@@ -38,11 +45,6 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "Home",
   props: ['id'],
-  watch: { 
-    getActiveSection: function(newVal, oldVal) {
-      this.scrollToSection(newVal);
-    }
-  },
   components: {
     Hero,
     Parallax,
@@ -104,6 +106,15 @@ export default {
       resetEdgeScrollingAction: 'resetEdgeScrolling',
       setEdgeScrollingAction: 'setEdgeScrolling'
     }),
+    visibilityChanged (isVisible, entry) {
+      if(isVisible) {
+        this.$router.push({path: entry.target.offsetParent.id});
+        this.setActiveSection({
+          willSroll: false,
+          section: entry.target.offsetParent.id
+        });
+      }
+    },
     checkRouteForInitialScroll() {
       let route = this.$route.path.replace('/', '')
       if(route != '') {

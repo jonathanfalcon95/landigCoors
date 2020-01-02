@@ -5,8 +5,8 @@ export const actions = {
   setAgeGateToken(context) {
     context.commit('setAgeGateToken');
   },
-  setActiveSection(context, section) {
-    context.commit('setActiveSection', section);
+  setActiveSection(context, payload) {
+    context.commit('setActiveSection', payload);
   },
   setScrollMotion(context, motion) {
     context.commit('setScrollMotion', motion);

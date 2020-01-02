@@ -74,7 +74,10 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     },
     selectMobileOption(option) {
-      this.setActiveSection(option);
+      this.setActiveSection({
+          willScroll: true,
+          section: option
+        });
       this.$router.push({path: option});
       this.openMenu();
     }

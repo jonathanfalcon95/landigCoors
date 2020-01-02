@@ -14,17 +14,28 @@
   min-height: 100vh;
 }
 
-#lacerveza {
-  // min-height: 101vh;
+.watcher {
+  width: 100%;
+  background-color: transparent;
+  height: 50px;
+  position: absolute;
+  z-index: 90;
+  &.top {
+    top: 200px;
+  }
+  &.bottom {
+    bottom: 80px;
+  }
 }
 
 #herencia {
-  // height: 200vh;
   margin-bottom: -100px;
 }
 
-#highlifehoy {
-  // height: 140vh;
+@media (min-width: 320px) and (max-width: 768px) {
+  #herencia {
+    margin-bottom: -80px;
+  }
 }
 
 .demo-hero {
