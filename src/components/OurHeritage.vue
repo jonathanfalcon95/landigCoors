@@ -28,7 +28,9 @@
                   <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
-                  <h3 class="title-in-carousel">UNA PROMESA GUARDADA DESDE 1903</h3>
+                  <h3 class="title-in-carousel desktop">UNA PROMESA GUARDADA DESDE 1903</h3>
+                  <h3 class="title-in-carousel responsive no-margin">UNA PROMESA</h3>
+                  <h3 class="title-in-carousel responsive">GUARDADA DESDE 1903</h3>
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     A inicios de 1900s, la mayoría de los estadounidenses disfrutaban de su cerveza
@@ -217,7 +219,6 @@ export default {
   mounted() {
     setTimeout(() => {
       this.$refs.firstcontainer.click()
-      console.log('mounted', 'clicked');
     }, 1500)
   }
 };
