@@ -110,7 +110,7 @@
                   <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
-                  <h3 class="title-in-carousel">NUESTROS PROPIOS LUPULOS</h3>
+                  <h3 class="title-in-carousel">NUESTROS PROPIOS LÚPULOS</h3>
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     A medida de que los cerveceros aprendían acerca de la 
