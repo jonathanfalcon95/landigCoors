@@ -11,7 +11,7 @@
           </div>
           <div class="subtitle">
             <h2>
-              high life nació
+              High Life nació
               en 1903 y tú?
             </h2>
           </div>
