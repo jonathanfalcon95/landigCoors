@@ -24,8 +24,8 @@
           en general. Miller High Life fue lanzada como la marca principal de
           Miller Brewing Company en 1903. Su sabor fácil de beber es el resumen
           de la categoría de las American lagers. Fiel a su receta original,
-          se elabora con una mezcla de cebada y malta patentada.
-          Lúpulo Galena del noroeste del Pacífico y levadura Miller.
+          se elabora con una mezcla de cebada y malta patentada,
+          lúpulo Galena del noroeste del Pacífico y levadura Miller.
         </p>
         <div class="table-values">
           <table>
@@ -43,7 +43,8 @@
               <tr></tr>
             </tbody>
           </table>
-          <span>(por cada 12 oz.)</span>
+          <br>
+          <span>por cada 12 oz.</span>
         </div>
       </div>
       <div class="the-beer_image-title">
