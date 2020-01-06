@@ -214,7 +214,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions({})
+    ...mapActions({}),
   },
   mounted() {
     setTimeout(() => {
@@ -235,14 +235,14 @@ export default {
 .VueCarousel-navigation {
   z-index: 100;
   button.VueCarousel-navigation-prev {
-    left: 35px !important;
+    left: 50px !important;
     color: $dark-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   button.VueCarousel-navigation-next {
-    right: 35px !important;
+    right: 50px !important;
     color: $dark-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .VueCarousel-dot-container {
