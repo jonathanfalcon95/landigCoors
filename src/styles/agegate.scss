@@ -79,10 +79,12 @@
   text-align: center;
   h2 {
     margin-bottom: 0px;
-    font-family: $font-dinbold;
+    font-family: $font-din;
+    text-transform: uppercase;
     font-weight: normal;
     color: $dark-color;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
   }
 }
 
