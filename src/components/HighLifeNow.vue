@@ -13,7 +13,7 @@
             class="centered"
           >Para obtener mas información de nuestra cerveza y otras cosas creada a nombre de High Life, visítenos en Facebook.</p>
           <p class="red-button">
-            <a href="https://www.facebook.com/MillerHLMx/" class="visit-facebo">VISITAR PáGINA</a>
+            <a href="https://www.facebook.com/MillerHLMx/" target="_blank" class="visit-facebo">VISITAR PáGINA</a>
           </p>
         </div>
         <div
@@ -28,7 +28,7 @@
           <p class="centered">Vea nuestros últimos comerciales sobre lo que hace a Miller High Life.</p>
           <img :src="thechampagneImage" alt class="mhlimage centeredtitle mobile-subtitle" />
           <p class="red-button">
-            <a href="https://www.youtube.com/millerhighlife" class="visit-facebo">VER</a>
+            <a href="https://www.youtube.com/millerhighlife" target="_blank" class="visit-facebo">VER</a>
           </p>
         </div>
         <div
