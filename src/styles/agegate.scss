@@ -62,6 +62,10 @@
       &:hover {
         cursor: pointer;
         text-decoration: underline;
+        &:last-child {
+          text-decoration: none;
+          cursor: default;
+        }
       }
       color: $white-color;
       font-size: 1rem;
