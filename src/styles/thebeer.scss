@@ -112,7 +112,7 @@
     width: 50%;
     p {
       margin-top: 5px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       font-family: $font-din;
       width: 100%;
       font-size: 0.98rem;
@@ -153,11 +153,21 @@
   }
 
   .table-values {
-    display: none;
+    // display: none;
+    tr {
+      th {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.5rem;
+      }
+      td {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+      }
+    }
   }
 
   .mobile-table-values {
-    display: block;
+    display: none;
     padding-left: 15px;
     table {
       border: 3px solid $darker-color;

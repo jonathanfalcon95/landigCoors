@@ -46,8 +46,7 @@
               <tr></tr>
             </tbody>
           </table>
-          <br>
-          <span>por cada 12 oz.</span>
+          <span>Por cada 12 oz.</span>
         </div>
       </div>
       <div class="the-beer_image-title">
