@@ -7,7 +7,6 @@
       <div class="carosuel-content">
         <carousel
           :per-page="1" 
-          :mouse-drag="true"
           :loop="true"
           :paginationActiveColor="'#fff'"
           :paginationColor="'#3F3F3E'"
@@ -38,7 +37,8 @@
                     Como un mercado desarrollado para la “botella de cerveza”,
                     Miller Brewers creo una cerveza emblemática, con cuerpo, refrescante y
                     efervescente. En tres años ganó el apodo de
-                    “La Champaña de la Cerveza Embotellada”.
+                    “La Champaña de la <br> 
+                    Cerveza Embotellada”.
                   </p>
                 </div>
               </div>
@@ -63,8 +63,8 @@
                     lleno de estrellas. Aunque no hay registro de como se creo 
                     la famosa “Chica en la luna” se sabe fue registrada por 
                     Miller en 1907. Desde entonces ella se ha convertido en 
-                    uno de los íconos de la marca más misteriosos y queridos 
-                    en América.
+                    uno de los íconos de la marca más misteriosos  
+                    <br> y queridos en América.
                   </p>
                 </div>
               </div>
@@ -92,7 +92,8 @@
                     champaña ahora estaba fácilmente disponible  para todos: 
                     desde ejecutivos hasta obreros – consistente con la 
                     creencia del fundador Frederick Miller de  que las 
-                    cosas buenas en la vida deberían estar disponibles para todos.
+                    cosas buenas en la vida deberían estar disponibles 
+                    <br> para todos.
                   </p>
                 </div>
               </div>
@@ -118,7 +119,8 @@
                     Miller dio pasos adicionales para desarrollar lúpulos 
                     Galeana especiales estables a la luz  solo para High Life, 
                     asegurando que la cerveza supiera tan refrescante de 
-                    como se ve a traves del vidrio de la botella transparente.
+                    como se ve a traves del vidrio de la 
+                    <br> botella transparente.
                   </p>
                 </div>
               </div>
