@@ -42,6 +42,11 @@
             />
             <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
           </div>
+          <FacebookButton
+            v-if="!showWarning"
+            v-on:fbLogin="fbLogin"
+            v-on:noBirthdayInFacebook="noBirthdayInFacebook"
+          />
           <div class="AgeGate-warning" v-if="showWarning">
             <div class="AgeGate-warning-wrapper">
               <p class="AgeGate-warning-message">Debes ser mayor de edad para navegar este sitio</p>
@@ -85,10 +90,12 @@ import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
 
 import Modal from '@/components/Modal'
+import FacebookButton from '@/components/FacebookButton'
 
 export default {
   name: "AgeGate",
   components: {
+    FacebookButton,
     Modal
   },
   data() {
@@ -110,6 +117,32 @@ export default {
     ...mapActions({
       setAgeGateTokenAction: "setAgeGateToken"
     }),
+    noBirthdayInFacebook() {
+      this.showWarning = true;
+    },
+    fbLogin(response) {
+      const bDay = Moment(`${response.birthday}`, "MM/DD/YYYY");
+      const today = Moment();
+      const age = today.diff(bDay, "years");
+      if (isNaN(age) || age < 18) {
+        this.showWarning = true;
+      } else {
+        setTimeout(() => {
+          axios
+              .get(
+                `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=5655fcb391d7c89416d0ad0d&clientPwd=Mg39l7R6Ne&appId=CUAMOC-MILLER-NACIONAL&socialNetwork=FB&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}&robinson=TRUE-O-FALSE`
+              )
+              .then(axiosResponse => {
+                setTimeout(() => {
+                  this.setAgeGateTokenAction(true);
+                }, 200)
+              })
+              .catch(e => {
+                this.errors.push(e);
+              });
+        }, 100);
+      }
+    },
     popUpModal(modalType) {
       this.showModal = true;
       this.wichModal = modalType;

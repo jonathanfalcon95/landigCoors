@@ -142,7 +142,7 @@ input, .submit-button {
   height: 45px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   &.hasError {
     input {
       border-color: #a74941 !important;
