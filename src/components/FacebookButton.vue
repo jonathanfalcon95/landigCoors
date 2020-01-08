@@ -1,12 +1,12 @@
 <template>
   <div id="fbButton" class="validacion" @click="doLogin">
     <img class="fblogo" :src="fbIconImage" />
-    <span>Facebook</span>
+    <span>FACEBOOK</span>
   </div>
 </template>
 
 <script>
-import fbIcon from "@/assets/public_facebook.png";
+import fbIcon from "@/assets/facebook-icon.png";
 
 export default {
   name: "FacebookButton",
@@ -41,27 +41,36 @@ export default {
 
 #fbButton {
   font-family: $font-dinbold;
-  border: 4px solid $darker-color;
-  margin-top: 1.5rem;
-  padding: 0.5rem 1rem;
+  border: 4px solid $dark-color;
+  margin-top: 15px;
+  padding: 5px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: $light-color;
   align-self: flex-end;
   cursor: pointer;
-  color: $darker-color;
+  color: $dark-color;
   img {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 0.5rem;
-    filter: invert(1) grayscale(1);
+    height: 25px;
+    width: auto;
+    margin-right: 10px;
+  }
+  span {
+    margin-right: 10px;
+  }
+  &:focus {
+    border-color: $darker-color;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
   #fbButton {
-    align-self: flex-start;
+    align-self: flex-end;
+    padding: 5px 10px;
+    img, span {
+      margin-right: 6px;
+    }
   }
 }
 </style>
