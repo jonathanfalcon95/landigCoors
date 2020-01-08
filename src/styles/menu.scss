@@ -23,6 +23,15 @@
   .social-icon {
     height: 2rem;
     width: 2rem;
+    &.facebook-icon {
+      height: 2.1rem;
+      width: 2.1rem;
+      margin-bottom: 2px;
+      img {
+        width: 2.1rem;
+        height: auto;
+      }
+    }
     img {
        width: 2rem;
        height: auto;

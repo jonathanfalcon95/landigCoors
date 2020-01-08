@@ -38,7 +38,7 @@
     </div>
     <div class="menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon" href=""><img :src="fbIconImage" /></a>
+        <a class="social-icon facebook-icon" href=""><img :src="fbIconImage" /></a>
         <a class="social-icon" href=""><img :src="twIconImage" /></a>
         <a class="social-icon" href=""><img :src="ytIconImage" /></a>
         <a class="social-icon" href=""><img :src="inIconImage" /></a>
