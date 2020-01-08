@@ -11,7 +11,7 @@
           :paginationActiveColor="'#fff'"
           :paginationColor="'#3F3F3E'"
           :paginationPosition="'bottom-overlay'"
-          :navigationEnabled="true"
+          :navigationEnabled="windowWidth > 768"
           :paginationPadding="5"
           :navigationNextLabel="'►'"
           :navigationPrevLabel="'◄'"
@@ -206,6 +206,7 @@ export default {
   },
   data() {
     return {
+      windowWidth: 0,
       goldenlineImage: goldenline,
       carousel1Image: carousel1,
       carousel2Image: carousel2,
@@ -219,6 +220,7 @@ export default {
     ...mapActions({}),
   },
   mounted() {
+    this.windowWidth = window.innerWidth;
     setTimeout(() => {
       this.$refs.firstcontainer.click()
     }, 1500)
