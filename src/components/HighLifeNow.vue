@@ -23,7 +23,7 @@
       </div>
       <div class="flex-row reverse">
         <div class="flex-content">
-          <h2 class="mobile-title centeredtitle">NO ES SOLO OTRA CERVEZA</h2>
+          <h2 class="mobile-title centeredtitle">NO ES SOLO OTRA CERVEZA...</h2>
           <img :src="goldenlineImage" alt class="mhlimage centeredtitle" />
           <p class="centered">Vea nuestros últimos comerciales sobre lo que hace a Miller High Life.</p>
           <p class="red-button">
