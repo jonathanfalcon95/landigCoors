@@ -6,9 +6,6 @@
           <img :src="mhllogoImage" alt />
         </div>
         <div class="form-container">
-          <div class="title-container">
-            <img :src="mhlphraseImage" alt />
-          </div>
           <div class="subtitle">
             <h2>
               High Life nació
