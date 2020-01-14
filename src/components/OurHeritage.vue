@@ -92,8 +92,7 @@
                     champaña ahora estaba fácilmente disponible  para todos: 
                     desde ejecutivos hasta obreros – consistente con la 
                     creencia del fundador Frederick Miller de  que las 
-                    cosas buenas en la vida deberían estar disponibles 
-                    <br> para todos.
+                    cosas buenas en la vida deberían estar disponibles para todos.
                   </p>
                 </div>
               </div>
@@ -119,8 +118,7 @@
                     Miller dio pasos adicionales para desarrollar lúpulos 
                     Galeana especiales estables a la luz  solo para High Life, 
                     asegurando que la cerveza supiera tan refrescante de 
-                    como se ve a través del vidrio de la 
-                    <br> botella transparente.
+                    como se ve a través del vidrio de la botella transparente.
                   </p>
                 </div>
               </div>
