@@ -36,7 +36,7 @@
                     en un bar o la llevaban a su casa en cubetas.
                     Como un mercado desarrollado para la “botella de cerveza”,
                     Miller Brewers creo una cerveza emblemática, con cuerpo, refrescante y
-                    efervescente. En tres años ganó el apodo de
+                    efervescente. Por tres años se ganó el apodo de
                     “La Champaña de la <br> 
                     Cerveza Embotellada”.
                   </p>
@@ -60,8 +60,8 @@
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     Ella se sienta en una luna creciente en medio de un cielo 
-                    lleno de estrellas. Aunque no hay registro de como se creo 
-                    la famosa “Chica en la luna” se sabe fue registrada por 
+                    lleno de estrellas. Aunque no hay registro de como se creó 
+                    la famosa “Chica en la luna” se sabe, que fue registrada por 
                     Miller en 1907. Desde entonces ella se ha convertido en 
                     uno de los íconos de la marca más misteriosos  
                     <br> y queridos en América.
@@ -87,7 +87,7 @@
                   <p class="descirption-in-carousel">
                     En la segunda guerra mundial, la cerveza en botella 
                     era muy común. A medida que los estadounidenses buscaban 
-                    una bebida mas ligera y refrescante, la misma lager que se 
+                    una bebida más ligera y refrescante, la misma lager que se 
                     produjo por primera vez como una lujosa cerveza tipo 
                     champaña ahora estaba fácilmente disponible  para todos: 
                     desde ejecutivos hasta obreros – consistente con la 
@@ -119,7 +119,7 @@
                     Miller dio pasos adicionales para desarrollar lúpulos 
                     Galeana especiales estables a la luz  solo para High Life, 
                     asegurando que la cerveza supiera tan refrescante de 
-                    como se ve a traves del vidrio de la 
+                    como se ve a través del vidrio de la 
                     <br> botella transparente.
                   </p>
                 </div>
@@ -171,8 +171,7 @@
                     Miller High Life hoy es como siempre ha sido. 
                     Se elabora con la misma receta. 
                     Embotellada en el mismo vidrio transparente.
-                    Ampliamente disponible para todos los que la buscan. 
-                    La champaña de las cervezas.
+                    Ampliamente disponible para todos los que la buscan.
                   </p>
                 </div>
               </div>
