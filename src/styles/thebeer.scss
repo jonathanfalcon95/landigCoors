@@ -25,7 +25,7 @@
 }
 .thebeer_logo-row {
   display: flex;
-  // flex-wrap: nowrap;
+  align-items: center;
   width: 100%;
   .thebeer_imagelogo-container {
     width: 25%;
@@ -37,6 +37,11 @@
   }
   .thebeer_phrase-container {
     width: 100%;
+    h2 {
+      font-size: 2.5rem;
+      color: $dark-color;
+      font-family: $font-stratum;
+    }
     img {
       width: 100%;
       height: auto;
@@ -141,6 +146,12 @@
     }
     .thebeer_phrase-container {
       width: 80%;
+      h2 {
+        font-size: 2.5rem;
+        color: $dark-color;
+        font-family: $font-stratum;
+        text-align: center;
+      }
       img {
         width: 100%;
         height: auto;
