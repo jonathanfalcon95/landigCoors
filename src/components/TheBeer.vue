@@ -6,7 +6,8 @@
         <img :src="millerhighlifelogoImage" alt class="thebeer_imagelogo" />
       </div>
       <div class="thebeer_phrase-container">
-        <h2>Welcome to the High Life</h2>
+        <h2>Welcome to 
+          <br>the High Life</h2>
       </div>
     </div>
     <div class="thebeer_content">
@@ -16,7 +17,8 @@
             <img :src="millerhighlifelogoImage" alt class="thebeer_imagelogo" />
           </div>
           <div class="thebeer_phrase-container">
-            <h2>Welcome to the High Life</h2>
+            <h2>Welcome to 
+              <br>the High Life</h2>
           </div>
         </div>
         <p>
