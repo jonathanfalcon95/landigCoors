@@ -23,10 +23,9 @@
       </div>
       <div class="flex-row reverse">
         <div class="flex-content">
-          <h2 class="mobile-title centeredtitle">NO ES SOLO OTRO CERVEZA</h2>
+          <h2 class="mobile-title centeredtitle">NO ES SOLO OTRA CERVEZA</h2>
           <img :src="goldenlineImage" alt class="mhlimage centeredtitle" />
           <p class="centered">Vea nuestros últimos comerciales sobre lo que hace a Miller High Life.</p>
-          <img :src="thechampagneImage" alt class="mhlimage centeredtitle mobile-subtitle" />
           <p class="red-button">
             <a href="https://www.youtube.com/millerhighlife" target="_blank" class="visit-facebo">VER</a>
           </p>
@@ -41,7 +40,7 @@
 </template>
 
 <script>
-import milr1160_5 from "@/assets/1160_MILR_Website_HighLife_05_0.jpg";
+import milr1160_5 from "@/assets/1160_MILR_Website_HighLife_05_2.png";
 import milr1160_6 from "@/assets/1160_MILR_Website_HighLife_06.jpg";
 import highlifesubtitle from "@/assets/1160_MILR_Website_HighLife_02_0.png";
 import goldenline from "@/assets/1160_MILR_Website_Heritage_Spacer_1.png";
