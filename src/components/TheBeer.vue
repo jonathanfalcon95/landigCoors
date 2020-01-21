@@ -43,12 +43,12 @@
               <tr>
                 <td class="abv-num">4.6%</td>
                 <td class="ibu-num">7</td>
-                <td class="cal-num">141</td>
+                <td class="cal-num">41</td>
               </tr>
               <tr></tr>
             </tbody>
           </table>
-          <span>Por cada 12 oz.</span>
+          <span>Por cada 100ml.</span>
         </div>
       </div>
       <div class="the-beer_image-title">
@@ -66,12 +66,12 @@
           <tr>
             <td class="abv-num">4.6%</td>
             <td class="ibu-num">7</td>
-            <td class="cal-num">141</td>
+            <td class="cal-num">41</td>
           </tr>
           <tr></tr>
         </tbody>
       </table>
-      <span>(por cada 12 oz.)</span>
+      <span>(por cada 100ml.)</span>
     </div>
   </div>
 </template>
