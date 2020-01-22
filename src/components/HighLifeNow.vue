@@ -1,8 +1,8 @@
 <template>
   <div class="high-life-now-container" ref="HighLifeNow" id="HighLifeNow">
     <RibbonTitle
-      title="WELCOME TO THE HIGH LIFE"
-      subtitle="QUE HAY DE NUEVO EN EL MUNDO DE HIGH LIFE"
+      title="WELCOME TO MILLER HIGH LIFE"
+      subtitle="QUE HAY DE NUEVO EN EL MUNDO DE MILLER HIGH LIFE"
     ></RibbonTitle>
     <div class="content">
       <div class="flex-row">
