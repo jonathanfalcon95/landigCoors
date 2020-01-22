@@ -32,7 +32,7 @@
         <div @click="selectMobileOption('highlifehoy')"
           :class="{ active: getActiveSection === 'highlifehoy'}"
           class="mobile-menu-option">
-          <h2>HIGH LIFE HOY</h2>
+          <h2>MILLER HIGH LIFE HOY</h2>
         </div>
       </div>
     </div>
