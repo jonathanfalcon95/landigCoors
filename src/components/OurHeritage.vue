@@ -116,7 +116,7 @@
                     A medida de que los cerveceros aprendían acerca de la 
                     susceptibilidad de los aceites del lúpulo a la luz, 
                     Miller dio pasos adicionales para desarrollar lúpulos 
-                    Galeana especiales estables a la luz  solo para High Life, 
+                    Galeana especiales estables a la luz  solo para Miller High Life, 
                     asegurando que la cerveza supiera tan refrescante de 
                     como se ve a través del vidrio de la botella transparente.
                   </p>
@@ -139,10 +139,10 @@
                   <h3 class="title-in-carousel">SI TU TIENES TIEMPO…</h3>
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
-                    Quizá mas que otra cerveza, High Life se ha 
+                    Quizá mas que otra cerveza, Miller High Life se ha 
                     asociado con la idea de una recompensa por un 
                     duro día de trabajo. Como el clásico jingle de 
-                    High Life “si tu tienes el tiempo, nosotros 
+                    Miller High Life “si tu tienes el tiempo, nosotros 
                     tenemos la cerveza”. Esta actitud de respeto 
                     entre cervecero y consumidor es algo que Miller 
                     High Life siempre ha defendido.
@@ -163,7 +163,7 @@
                   <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
-                  <h3 class="title-in-carousel">“THE HIGH LIFE” HOY</h3>
+                  <h3 class="title-in-carousel">“THE MILLER HIGH LIFE” HOY</h3>
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     Miller High Life hoy es como siempre ha sido. 
