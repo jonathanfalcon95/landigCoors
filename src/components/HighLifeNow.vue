@@ -7,11 +7,11 @@
     <div class="content">
       <div class="flex-row">
         <div class="flex-content">
-          <img :src="highlifesubtitleImage" alt class="mobile-title mhlimage centeredtitle" />
+          <img :src="highlifesubtitleLogo" alt class="mhllogorow mhlimage centeredtitle" />
           <img :src="goldenlineImage" alt class="mhlimage centeredtitle" />
           <p
             class="centered"
-          >Para obtener mas información de nuestra cerveza y otras cosas creada a nombre de High Life, visítenos en Facebook.</p>
+          >Para más información de nuestra cerveza y más cosas sobre Miller High Life, visítenos en Facebook.</p>
           <p class="red-button">
             <a href="https://www.facebook.com/MillerHLMx/" target="_blank" class="visit-facebo">VISITAR PáGINA</a>
           </p>
@@ -41,8 +41,8 @@
 
 <script>
 import milr1160_5 from "@/assets/1160_MILR_Website_HighLife_05_2.png";
-import milr1160_6 from "@/assets/1160_MILR_Website_HighLife_06.jpg";
-import highlifesubtitle from "@/assets/1160_MILR_Website_HighLife_02_0.png";
+import milr1160_6 from "@/assets/1160_MILR_Website_HighLife_062.jpg";
+import highlifesubtitle from "@/assets/miller-high-life-centered-logo.png";
 import goldenline from "@/assets/1160_MILR_Website_Heritage_Spacer_1.png";
 import thechampagne from '@/assets/1160_MILR_Website_NJAB_8.png';
 
@@ -64,7 +64,7 @@ export default {
     return {
       milr1160_5Image: milr1160_5,
       milr1160_6Image: milr1160_6,
-      highlifesubtitleImage: highlifesubtitle,
+      highlifesubtitleLogo: highlifesubtitle,
       goldenlineImage: goldenline,
       thechampagneImage: thechampagne
     };

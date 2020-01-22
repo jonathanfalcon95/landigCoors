@@ -4,6 +4,10 @@
 
 }
 
+.mhllogorow {
+  width: 25%;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -65,7 +69,10 @@ p.red-button {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  
+  .mhllogorow {
+    width: 40%;
+    margin-top: 2rem;
+  }
   //CSS
   .flex-row {
     flex-direction: column-reverse;
