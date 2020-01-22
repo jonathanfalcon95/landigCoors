@@ -187,7 +187,7 @@ import { mapActions, mapGetters } from "vuex";
 
 import RibbonTitle from "@/components/RibbonTitle";
 import carousel1 from "@/assets/1160_MILR_Website_Heritage_01.jpg";
-import carousel2 from "@/assets/girl-in-moon-logo_0.jpg";
+import carousel2 from "@/assets/nina-luna-miller-high-life.png";
 import carousel3 from "@/assets/1160_MILR_Website_Heritage_03.jpg"
 import carousel4 from "@/assets/1160_MILR_Website_Heritage_04_02.jpg";
 import carousel5 from "@/assets/1160_MILR_Website_Heritage_05_1.jpg";
