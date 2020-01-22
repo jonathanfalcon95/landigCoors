@@ -7,7 +7,7 @@
       </div>
       <div class="thebeer_phrase-container">
         <h2>Welcome to 
-          <br>the High Life</h2>
+          <br>MILLER High Life</h2>
       </div>
     </div>
     <div class="thebeer_content">
@@ -18,7 +18,7 @@
           </div>
           <div class="thebeer_phrase-container">
             <h2>Welcome to 
-              <br>the High Life</h2>
+              <br>MILLER High Life</h2>
           </div>
         </div>
         <p>
