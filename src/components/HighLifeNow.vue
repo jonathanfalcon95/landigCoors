@@ -31,7 +31,7 @@
           </p>
         </div>
         <div
-          class="flex-image-container"
+          class="flex-image-container mobileexception"
           v-bind:style="{ backgroundImage: 'url(' + milr1160_6Image + ')'}"
         ></div>
       </div>
