@@ -9,7 +9,7 @@
           <div class="subtitle">
             <h2>
               Miller High Life nació
-              en 1903 y tú?
+              <br> en 1903 y tú?
             </h2>
           </div>
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">

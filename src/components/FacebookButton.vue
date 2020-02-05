@@ -3,8 +3,8 @@
     class="validacion"
     v-bind:class="[isForResponsive]"
     @click="doLogin">
-    <img class="fblogo" :src="fbIconImage" />
-    <span>FACEBOOK</span>
+    <!-- <img class="fblogo" :src="fbIconImage" /> -->
+    <span>INICIAR SESIÓN CON FACEBOOK</span>
   </div>
 </template>
 
@@ -49,14 +49,16 @@ export default {
   font-family: $font-dinbold;
   border: 4px solid $dark-color;
   margin-top: 8px;
-  margin-left: 4px;
+  margin-left: 5px;
   padding: 5px 5px !important;
+
+  width: 79%;
 
   display: flex;
   justify-content: center;
   align-items: center;
   background: $light-color;
-  align-self: flex-start;
+  align-self: center;
   cursor: pointer;
   color: $dark-color;
   height: 35px !important;
@@ -65,14 +67,11 @@ export default {
     width: auto;
     margin-right: 10px;
   }
-  span {
-    margin-right: 10px;
-  }
   &:focus {
     border-color: $darker-color;
   }
   &.desktop {
-    margin-top: 20px;
+    margin-top: 10px;
     img {
       margin-left: 0.8rem;
     }
@@ -119,7 +118,13 @@ export default {
       &.mobile {
       margin-top: 1rem;
       align-self: flex-start;
-      margin-left: 0.7rem;
+      margin-left: 0rem;
+      width: 93%;
+      text-align: center;
+      span {
+        font-size: 0.8rem;
+        margin: 0px;
+      }
     }
   }
 }
