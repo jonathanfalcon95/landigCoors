@@ -8,7 +8,7 @@
         <div class="form-container">
           <div class="subtitle">
             <h2>
-              High Life nació
+              Miller High Life nació
               en 1903 y tú?
             </h2>
           </div>
@@ -43,6 +43,13 @@
             v-if="!showWarning"
             v-on:fbLogin="fbLogin"
             v-on:noBirthdayInFacebook="noBirthdayInFacebook"
+            isForResponsive="desktop"
+          />
+          <FacebookButton
+            v-if="!showWarning"
+            v-on:fbLogin="fbLogin"
+            v-on:noBirthdayInFacebook="noBirthdayInFacebook"
+            isForResponsive="mobile"
           />
           <div class="AgeGate-warning" v-if="showWarning">
             <div class="AgeGate-warning-wrapper">
