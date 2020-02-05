@@ -14,7 +14,7 @@
           :navigationEnabled="windowWidth > 768"
           :paginationPadding="5"
           :navigationNextLabel="'►'"
-          :navigationPrevLabel="'◄'"
+          :navigationPrevLabel="'◄'"  
           >
           <!-- slide 1  -->
           <slide>
@@ -237,13 +237,32 @@ export default {
   z-index: 100;
   button.VueCarousel-navigation-prev {
     left: 50px !important;
-    color: $dark-color;
-    font-size: 2rem;
+    font-weight: bold;
+    &:focus {
+      outline: 0;
+    }
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 30px 15px 0;
+    border-color: transparent $dark-color transparent transparent;
+    padding: 0px !important;
+    color: transparent;
+    // font-size: 3rem;
   }
   button.VueCarousel-navigation-next {
     right: 50px !important;
-    color: $dark-color;
-    font-size: 2rem;
+    font-weight: bold;
+    &:focus {
+      outline: 0;
+    }
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent $dark-color;
+    color: transparent;
+    padding: 0px !important;
   }
 }
 .VueCarousel-dot-container {
@@ -268,6 +287,10 @@ export default {
   .VueCarousel-dot-container {
     margin-left: 0px !important;
     margin-bottom: 10px !important;
+  }
+
+  button.VueCarousel-navigation-prev, button.VueCarousel-navigation-next {
+    border: 0px !important;
   }
 }
 </style>
