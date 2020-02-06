@@ -27,7 +27,7 @@
           <img :src="goldenlineImage" alt class="mhlimage centeredtitle" />
           <p class="centered">Vea nuestros últimos comerciales sobre lo que hace a Miller High Life.</p>
           <p class="red-button">
-            <a href="https://www.youtube.com/millerhighlife" target="_blank" class="visit-facebo">VER</a>
+            <a href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg" target="_blank" class="visit-facebo">VER</a>
           </p>
         </div>
         <div

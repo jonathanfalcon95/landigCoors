@@ -38,10 +38,10 @@
     </div>
     <div class="mobile-menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon" href=""><img :src="fbIconImage" /></a>
-        <a class="social-icon" href=""><img :src="twIconImage" /></a>
-        <a class="social-icon" href=""><img :src="ytIconImage" /></a>
-        <a class="social-icon" href=""><img :src="inIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://www.facebook.com/MillerHLMx/"><img :src="fbIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://twitter.com/millerhlmx?lang=es"><img :src="twIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg"><img :src="ytIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://www.instagram.com/millerhighlifemx/"><img :src="inIconImage" /></a>
       </div>
     </div>
   </div>
