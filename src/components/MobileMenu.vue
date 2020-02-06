@@ -22,17 +22,17 @@
         <div @click="selectMobileOption('lacerveza')"
           :class="{ active: getActiveSection === 'lacerveza'}" 
           class="mobile-menu-option">
-          <h2>LA CERVEZA</h2>
+          <h2 class="stratum">LA CERVEZA</h2>
         </div>
         <div @click="selectMobileOption('herencia')"
           :class="{ active: getActiveSection === 'herencia'}"
           class="mobile-menu-option">
-          <h2>HERENCIA</h2>
+          <h2 class="stratum">HERENCIA</h2>
         </div>
         <div @click="selectMobileOption('highlifehoy')"
           :class="{ active: getActiveSection === 'highlifehoy'}"
           class="mobile-menu-option">
-          <h2>MILLER HIGH LIFE HOY</h2>
+          <h2 class="stratum">MILLER HIGH LIFE HOY</h2>
         </div>
       </div>
     </div>

@@ -11,6 +11,13 @@
   z-index: 9997;
 }
 
+.menu-option {
+  .stratum {
+    font-family: $font-stratum;
+    font-weight: normal;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   #menu-container {
     display: none;
@@ -130,6 +137,8 @@
         h2 {
           margin-top: 0px;
           margin-bottom: 0.5rem;
+          font-family: $font-stratum;
+          font-weight: normal;
         }
       }
     }

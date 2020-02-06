@@ -4,6 +4,13 @@
   display: none;
 }
 
+.mobile-menu-option {
+  .stratum {
+    font-family: $font-stratum;
+    font-weight: normal;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   #mobile-menu-container {
     display: block;
