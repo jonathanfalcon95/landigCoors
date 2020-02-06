@@ -2,7 +2,7 @@
   <div class="our-heritage-container" ref="OurHeritage" id="OurHeritage">
     <div class="content">
       <div class="responsive ribbon-container">
-        <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+        <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
       </div>
       <div class="carosuel-content">
         <carousel
@@ -24,7 +24,7 @@
               </div>
               <div class="text-in-carousel">
                 <div class="ribbon-container">
-                  <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                  <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel desktop">UNA PROMESA GUARDADA DESDE 1903</h3>
@@ -53,7 +53,7 @@
               </div>
               <div class="text-in-carousel">
                   <div class="ribbon-container">
-                    <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                    <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                   </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">LA CHICA EN LA LUNA</h3>
@@ -79,7 +79,7 @@
               </div>
               <div class="text-in-carousel">
                 <div class="ribbon-container">
-                  <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                  <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">POPULARIDAD CRECIENTE</h3>
@@ -107,7 +107,7 @@
               </div>
               <div class="text-in-carousel">
                 <div class="ribbon-container">
-                  <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                  <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">NUESTROS PROPIOS LÚPULOS</h3>
@@ -133,7 +133,7 @@
               </div>
               <div class="text-in-carousel">
                 <div class="ribbon-container">
-                  <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                  <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">SI TU TIENES TIEMPO…</h3>
@@ -160,7 +160,7 @@
               </div>
               <div class="text-in-carousel">
                 <div class="ribbon-container">
-                  <RibbonTitle title="herencia" subtitle="MAS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
+                  <RibbonTitle title="herencia" subtitle="MÁS DE UN SIGLO DE HISTORIA ENRIQUECEDORA"></RibbonTitle>
                 </div>
                 <div class="text-row">
                   <h3 class="title-in-carousel">“THE MILLER HIGH LIFE” HOY</h3>
