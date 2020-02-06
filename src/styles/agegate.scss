@@ -1,5 +1,9 @@
 @import "~@/styles/variables.scss";
 
+.mobile {
+  display: none;
+}
+
 #age-gate-container {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,7 @@
       margin: 0px;
       font-size: 0.8rem;;
       font-family: $font-din;
-      color: $gray-color;
+      color: $white-color;
     }
   }
   .privacy-container {
@@ -218,6 +222,21 @@ input, .submit-button {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .age-gate-footer {
+    .number-in-footer {
+      width: 145px;
+    }
+  }
+
+  .privacy.mobile {
+    margin-bottom: 1rem !important;
+  }
   .age-gate-body {
     height: calc(100vh - 140px);
   }
@@ -264,7 +283,7 @@ input, .submit-button {
 
   .age-gate-footer {
     flex-direction: column;
-    height: 200px;
+    height: 240px;
     text-align: center;
     .footer-titles {
       width: 85%;
