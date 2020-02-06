@@ -67,14 +67,26 @@
       </div>
     </div>
     <div class="age-gate-footer">
-      <div class="privacy-container">
-        <h4 class="privacy"
-        @click="popUpModal('terms')">terminos y condiciones</h4>
-        <h4 class="privacy bar">|</h4>
-        <h4 class="privacy"
-        @click="popUpModal('politics')">politicas de privacidad</h4>
-        <h4 class="privacy bar">|</h4>
-        <h4 class="privacy">evita el exceso</h4>
+      <div class="logo-in-footer">
+        <img :src="mhlcenteredlogoImage" alt="" class="footer-logo">
+      </div>
+      <div class="footer-titles">
+        <div class="privacy-container">
+          <h4 class="privacy"
+            @click="popUpModal('terms')">terminos y condiciones</h4>
+          <h4 class="privacy bar">|</h4>
+          <h4 class="privacy"
+            @click="popUpModal('politics')">politicas de privacidad</h4>
+          <h4 class="privacy bar">|</h4>
+          <h4 class="privacy">evita el exceso - producto para mayores de 18 años</h4>
+        </div>
+
+        <div class="footer-subtitle">
+          <p>© 2020 Coors Brewing Co. Y ™/® Propiedad de Coors Brewing Company, Denver, CO USA.</p>
+        </div>
+      </div>
+      <div class="number-in-footer">
+        <img :src="phonenumberImage" alt="" class="footer-logo">
       </div>
     </div>
     <Modal 
@@ -89,6 +101,9 @@ import Moment from "moment";
 
 import mhllogo from "@/assets/miller-high-life-logo.png";
 import mhlphrase from "@/assets/miller-high-logo-phrase.png";
+import mhlcenteredlogo from "@/assets/miller-high-life-centered-logo.png";
+import phonenumber from "@/assets/800CERVEZA.png";
+
 
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
@@ -110,6 +125,8 @@ export default {
       showWarning: false,
       mhllogoImage: mhllogo,
       mhlphraseImage: mhlphrase,
+      mhlcenteredlogoImage: mhlcenteredlogo,
+      phonenumberImage: phonenumber,
       showModal: false,
       wichModal: 'terms'
     };

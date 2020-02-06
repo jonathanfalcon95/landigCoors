@@ -52,7 +52,7 @@ export default {
   margin-left: 5px;
   padding: 5px 5px !important;
 
-  width: 79%;
+  width: 87%;
 
   display: flex;
   justify-content: center;
@@ -119,7 +119,7 @@ export default {
       margin-top: 1rem;
       align-self: flex-start;
       margin-left: 0rem;
-      width: 93%;
+      width: 89%;
       text-align: center;
       span {
         font-size: 0.8rem;
