@@ -190,8 +190,8 @@ import carousel1 from "@/assets/1160_MILR_Website_Heritage_01.jpg";
 import carousel2 from "@/assets/nina-luna-miller-high-life.png";
 import carousel3 from "@/assets/1160_MILR_Website_Heritage_03.jpg"
 import carousel4 from "@/assets/1160_MILR_Website_Heritage_04_02.jpg";
-import carousel5 from "@/assets/1160_MILR_Website_Heritage_05_1.jpg";
-import carousel6 from "@/assets/1160_MILR_Desk_Heritage_06.jpg";
+import carousel5 from "@/assets/Miller-High-Life-Bottle.png";
+import carousel6 from "@/assets/Miller-High-Life.png";
 import goldenline from "@/assets/1160_MILR_Website_Heritage_Spacer_1.png";
 export default {
   name: "OurHeritage",
