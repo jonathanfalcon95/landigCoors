@@ -64,14 +64,14 @@ export default {
 
 @media (min-width: 320px) and (max-width: 600px) {
   .star-line {
-  width: 60%;
-}
+    width: 60%;
+  }
 }
 
 .ribbon-subtitle {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem 0rem;
-  font-family: $font-dinbold;
+  font-family: $font-stratum;
 }
 </style>
