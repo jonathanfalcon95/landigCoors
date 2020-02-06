@@ -24,12 +24,28 @@
       </section>
       <div class="footer-container">
         <div class="age-gate-footer">
-          <div class="privacy-container">
-            <h4 class="privacy" @click="popUpModal('terms')">terminos y condiciones</h4>
-            <h4 class="privacy bar">|</h4>
-            <h4 class="privacy" @click="popUpModal('politics')">politicas de privacidad</h4>
-            <h4 class="privacy bar">|</h4>
-            <h4 class="privacy">evita el exceso</h4>
+          <div class="logo-in-footer">
+            <img :src="mhlcenteredlogoImage" alt class="footer-logo" />
+          </div>
+          <div class="footer-titles">
+            <div class="privacy-container">
+              <h4 class="privacy" @click="popUpModal('terms')">terminos y condiciones</h4>
+              <h4 class="privacy bar">|</h4>
+              <h4 class="privacy" @click="popUpModal('politics')">politicas de privacidad</h4>
+              <h4 class="privacy bar">|</h4>
+              <h4 class="privacy desktop">evita el exceso - producto para mayores de 18 años</h4>
+              <h4 class="privacy mobile">
+                evita el exceso
+                <br />producto para mayores de 18 años
+              </h4>
+            </div>
+
+            <div class="footer-subtitle">
+              <p>© 2020 Coors Brewing Co. Y ™/® Propiedad de Coors Brewing Company, Denver, CO USA.</p>
+            </div>
+          </div>
+          <div class="number-in-footer">
+            <img :src="phonenumberImage" alt class="footer-logo" />
           </div>
         </div>
         <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
@@ -50,6 +66,9 @@ import MobileMenu from "@/components/MobileMenu";
 import Modal from "@/components/Modal";
 
 import parallaxer from "../assets/parallaxer.jpeg";
+
+import mhlcenteredlogo from "@/assets/miller-high-life-centered-logo.png";
+import phonenumber from "@/assets/800CERVEZA.png";
 
 import VueScrollTo from "vue-scrollto";
 
@@ -83,6 +102,8 @@ export default {
       wichModal: "terms",
       fixedLel: true,
       parallaxerImage: parallaxer,
+      mhlcenteredlogoImage: mhlcenteredlogo,
+      phonenumberImage: phonenumber,
       placesDirections: {
         heroUp: () => {
           this.setActiveSection("lacerveza");
