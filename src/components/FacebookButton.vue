@@ -52,7 +52,7 @@ export default {
   margin-left: 5px;
   padding: 5px 5px !important;
 
-  width: 87%;
+  width: 87.5%;
 
   display: flex;
   justify-content: center;
