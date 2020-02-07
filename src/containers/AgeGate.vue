@@ -78,8 +78,8 @@
           <h4 class="privacy"
             @click="popUpModal('politics')">politicas de privacidad</h4>
           <h4 class="privacy bar">|</h4>
-          <h4 class="privacy desktop">evita el exceso - producto para mayores de 18 años</h4>
-          <h4 class="privacy mobile">
+          <h4 class="privacy desktop nohover">evita el exceso - producto para mayores de 18 años</h4>
+          <h4 class="privacy mobile nohover">
             evita el exceso
             <br>producto para mayores de 18 años
           </h4>
