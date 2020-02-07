@@ -82,6 +82,12 @@ export default {
   display: none !important;
 }
 
+@media (min-width: 1400px) and (max-width: 3000px) {
+  #fbButton {
+    width: 85.6%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .desktop {
     display: none !important;
