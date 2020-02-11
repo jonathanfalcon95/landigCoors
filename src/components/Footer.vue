@@ -3,10 +3,10 @@
     <div class="age-gate-footer">
       <div class="privacy-container">
         <h4 class="privacy"
-        @click="popUpModal('terms')">terminos y condiciones</h4>
+        @click="popUpModal('terms')">términos y condiciones</h4>
         <h4 class="privacy bar">|</h4>
         <h4 class="privacy"
-        @click="popUpModal('politics')">politicas de privacidad</h4>
+        @click="popUpModal('politics')">políticas de privacidad</h4>
         <h4 class="privacy bar">|</h4>
         <h4 class="privacy">evita el exceso</h4>
       </div>
