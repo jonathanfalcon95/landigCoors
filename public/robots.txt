@@ -1,0 +1,26 @@
+# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://millerhighlife.com.com.mx/sitemap.xml
+
+User-agent: Googlebot
+Allow:/
+
+User-agent: AdsBot-Google
+Allow:/
+
+User-agent: Googlebot-Image
+Allow:/
+
+User-agent: Googlebot-Mobile
+Allow:/
+
+User-agent: Mediapartners-Google
+Allow:/
+
+User-agent: RED
+Allow:/
+
+User-agent: twitterbot
+Allow:/
+
+User-agent: *
+Allow:/
