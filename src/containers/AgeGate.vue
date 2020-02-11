@@ -155,7 +155,7 @@ export default {
         setTimeout(() => {
           axios
               .get(
-                `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=5655fcb391d7c89416d0ad0d&clientPwd=Mg39l7R6Ne&appId=CUAMOC-MILLER-NACIONAL&socialNetwork=FB&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}&robinson=TRUE-O-FALSE`
+                `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5def8589787d690d08439f86&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
               )
               .then(axiosResponse => {
                 setTimeout(() => {
