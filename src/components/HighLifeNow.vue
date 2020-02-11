@@ -49,13 +49,11 @@ import thechampagne from '@/assets/1160_MILR_Website_NJAB_8.png';
 import { mapActions, mapGetters } from "vuex";
 
 import RibbonTitle from "@/components/RibbonTitle";
-import Footer from "@/components/Footer";
 
 export default {
   name: "HighLifeNow",
   components: {
     RibbonTitle,
-    Footer
   },
   computed: {
     ...mapGetters([""])
