@@ -26,6 +26,12 @@ p {
   font-family: $font-dinbold;
 }
 
+.privacy-text {
+  p {
+    font-family: $font-din;
+  }
+}
+
 #app {
   overflow-y: scroll;
 }
