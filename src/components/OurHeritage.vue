@@ -60,7 +60,7 @@
                   <img :src="goldenlineImage" class="golden-line" />
                   <p class="descirption-in-carousel">
                     Ella se sienta en una luna creciente en medio de un cielo 
-                    lleno de estrellas. Aunque no hay registro de como se creó 
+                    lleno de estrellas. Aunque no hay registro de cómo se creó 
                     la famosa “Chica en la luna” se sabe, que fue registrada por 
                     Miller en 1907. Desde entonces ella se ha convertido en 
                     uno de los íconos de la marca más misteriosos  

@@ -2,7 +2,7 @@
   <div class="high-life-now-container" ref="HighLifeNow" id="HighLifeNow">
     <RibbonTitle
       title="WELCOME TO MILLER HIGH LIFE"
-      subtitle="QUE HAY DE NUEVO EN EL MUNDO DE MILLER HIGH LIFE"
+      subtitle="QUÉ HAY DE NUEVO EN EL MUNDO DE MILLER HIGH LIFE"
     ></RibbonTitle>
     <div class="content">
       <div class="flex-row">
@@ -25,7 +25,7 @@
         <div class="flex-content">
           <h2 class="mobile-title centeredtitle">NO ES SOLO OTRA CERVEZA...</h2>
           <img :src="goldenlineImage" alt class="mhlimage centeredtitle" />
-          <p class="centered">Vea nuestros últimos comerciales sobre lo que hace a Miller High Life.</p>
+          <p class="centered">Vea las últimas campañas de Miller High Life.</p>
           <p class="red-button">
             <a href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg" target="_blank" class="visit-youtube">VER</a>
           </p>
