@@ -2,14 +2,14 @@
   <div id="age-gate-container">
     <div class="age-gate-body">
       <div class="width-container">
-        <div class="logo-container">
-          <img :src="mhllogoImage" alt />
-        </div>
+        <!-- <div class="logo-container">
+          <img :src="coorslogoImage" alt />
+        </div> -->
         <div class="form-container">
           <div class="subtitle">
             <h2>
-              Miller High Life nació
-              <br> en 1903 y tú?
+             When were
+you born?
             </h2>
           </div>
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">
@@ -68,7 +68,7 @@
     </div>
     <div class="age-gate-footer">
       <div class="logo-in-footer">
-        <img :src="mhlcenteredlogoImage" alt="" class="footer-logo">
+        <img :src="coorscenteredlogoImage" alt="" class="footer-logo">
       </div>
       <div class="footer-titles">
         <div class="privacy-container">
@@ -103,9 +103,9 @@
 <script>
 import Moment from "moment";
 
-import mhllogo from "@/assets/miller-high-life-logo.png";
-import mhlphrase from "@/assets/miller-high-logo-phrase.png";
-import mhlcenteredlogo from "@/assets/miller-high-life-centered-logo.png";
+import coorslogo from "@/assets/miller-high-life-logo.png";
+import coorsphrase from "@/assets/miller-high-logo-phrase.png";
+import coorscenteredlogo from "@/assets/miller-high-life-centered-logo.png";
 import phonenumber from "@/assets/800CERVEZA.png";
 
 
@@ -127,9 +127,9 @@ export default {
       month: undefined,
       year: undefined,
       showWarning: false,
-      mhllogoImage: mhllogo,
-      mhlphraseImage: mhlphrase,
-      mhlcenteredlogoImage: mhlcenteredlogo,
+      coorslogoImage: coorslogo,
+      coorsphraseImage: coorsphrase,
+      coorscenteredlogoImage: coorscenteredlogo,
       phonenumberImage: phonenumber,
       showModal: false,
       wichModal: 'terms'

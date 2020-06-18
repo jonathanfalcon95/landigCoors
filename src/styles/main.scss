@@ -2,7 +2,8 @@
 
 body {
   margin: 0px;
-  background: $light-color;
+ // background: $light-color;
+ 
   font-family: $font-din;
   height: 100vh;
 }
@@ -74,4 +75,9 @@ p {
 @font-face {
   font-family: "StratumNo1Heavy";
   src: url('@~/StratumNo1Heavy.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('@~/HelveticaNeueLTStd-Cn.otf') format('opentype');
+
 }

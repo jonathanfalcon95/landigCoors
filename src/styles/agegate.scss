@@ -13,18 +13,24 @@
 }
 
 .age-gate-body {
-  height: calc(100vh - 100px);
+  height: 754px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: url('../assets/CL-Homepage-Desktop-1920-x-900.jpg' );
+  background-size:cover ;
+  background-position: right;
+  
+
 }
 
 .width-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 80%;
   max-width: $max-width;
 }
@@ -41,8 +47,8 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   // width: 45%;
   // max-width: 320px;
   .title-container {
@@ -55,7 +61,7 @@
 .age-gate-footer {
   background-color: $dark-color;
   width: 100%;
-  height: 100px;
+  height: 300px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -208,11 +214,12 @@ input, .submit-button {
   .form-container {
     // max-width: 400px;
     // width: 60%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     .subtitle {
       h2 {
         margin-top: 0px;
+        font-family: "AvenirLTStd-Heavy";
       }
     }
   }
