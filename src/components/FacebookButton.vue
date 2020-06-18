@@ -46,18 +46,32 @@ export default {
 @import "~@/styles/variables.scss";
 
 #fbButton {
-  font-family: $font-dinbold;
-  border: 4px solid $dark-color;
-  margin-top: 8px;
-  margin-left: 5px;
-  padding: 5px 5px !important;
+ 
+    background-color: #ffffff;
+    color: transparent;
+    font-size: 16px;
+    
+    border-radius: 100px;
+   
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65px;
 
+
+
+  font-family: $font-dinbold;
+  //border: 1px solid $dark-color;
+  margin-top: 8px;
+  //margin-left: 5px;
+  padding: 5px 5px !important;
+  margin-right: 40px;
   width: 87.5%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $light-color;
+ // background: $light-color;
   align-self: center;
   cursor: pointer;
   color: $dark-color;
@@ -111,6 +125,7 @@ export default {
 
 @media (min-width: 320px) and (max-width: 600px) {
   #fbButton {
+    
       img, span {
         margin-left: 1rem;
       }

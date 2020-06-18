@@ -5,7 +5,7 @@
     <div class="menu-header">
       <div class="menu_icon-container">
         <img @click="selectMobileOption('home')"
-          :src="mhliconImage" alt />
+          :src="coorsiconImage" alt />
       </div>
       <div class="hamburguer-container">
         <div id="nav-icon3" :class="{ open: isMenuOpen }"
@@ -22,33 +22,34 @@
         <div @click="selectMobileOption('lacerveza')"
           :class="{ active: getActiveSection === 'lacerveza'}" 
           class="menu-option">
-          <h2 class="stratum">LA CERVEZA</h2>
+          <h2 class="stratum">Home</h2>
         </div>
         <div @click="selectMobileOption('herencia')"
           :class="{ active: getActiveSection === 'herencia'}"
           class="menu-option">
-          <h2 class="stratum">HERENCIA</h2>
+          <h2 class="stratum">Our Beer</h2>
         </div>
-        <div @click="selectMobileOption('highlifehoy')"
+        <!-- <div @click="selectMobileOption('highlifehoy')"
           :class="{ active: getActiveSection === 'highlifehoy'}"
           class="menu-option">
           <h2 class="stratum">MILLER HIGH LIFE HOY</h2>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon facebook-icon" target="_blank" href="https://www.facebook.com/MillerHLMx/"><img :src="fbIconImage" /></a>
-        <a class="social-icon" target="_blank" href="https://twitter.com/millerhlmx?lang=es"><img :src="twIconImage" /></a>
-        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg"><img :src="ytIconImage" /></a>
         <a class="social-icon" target="_blank" href="https://www.instagram.com/millerhighlifemx/"><img :src="inIconImage" /></a>
+        <a class="social-icon facebook-icon" target="_blank" href="https://www.facebook.com/MillerHLMx/"><img :src="fbIconImage" /></a>
+      
+        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg"><img :src="ytIconImage" /></a>
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import mhlicon from "@/assets/miller-high-life-icon.png";
+import coorsicon from "@/assets/CoorsLight_Logo_nav_3.png";
 
 import fbIcon from "@/assets/public_facebook.png";
 import twIcon from "@/assets/public_twitter.png";
@@ -85,7 +86,7 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      mhliconImage: mhlicon,
+      coorsiconImage: coorsicon,
       fbIconImage: fbIcon,
       twIconImage: twIcon,
       ytIconImage: ytIcon,

@@ -4,12 +4,12 @@
       <div class="width-container">
         <!-- <div class="logo-container">
           <img :src="coorslogoImage" alt />
-        </div> -->
+        </div>-->
         <div class="form-container">
           <div class="subtitle">
             <h2>
-             When were
-you born?
+              When were
+              <br />you born?
             </h2>
           </div>
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">
@@ -37,8 +37,12 @@ you born?
               v-on:keyup="focusNextSibling($event)"
               v-model="year"
             />
-            <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
+            <br />
+            <!-- <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" /> -->
           </div>
+          <p>Intended for legal drinking age consumers only. Privacy Policy</p>
+        
+          <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
           <FacebookButton
             v-if="!showWarning"
             v-on:fbLogin="fbLogin"
@@ -68,20 +72,18 @@ you born?
     </div>
     <div class="age-gate-footer">
       <div class="logo-in-footer">
-        <img :src="coorscenteredlogoImage" alt="" class="footer-logo">
+        <img :src="coorscenteredlogoImage" alt class="footer-logo" />
       </div>
       <div class="footer-titles">
         <div class="privacy-container">
-          <h4 class="privacy"
-            @click="popUpModal('terms')">términos y condiciones</h4>
+          <h4 class="privacy" @click="popUpModal('terms')">términos y condiciones</h4>
           <h4 class="privacy bar">|</h4>
-          <h4 class="privacy"
-            @click="popUpModal('politics')">políticas de privacidad</h4>
+          <h4 class="privacy" @click="popUpModal('politics')">políticas de privacidad</h4>
           <h4 class="privacy bar">|</h4>
           <h4 class="privacy desktop nohover">evita el exceso - producto para mayores de 18 años</h4>
           <h4 class="privacy mobile nohover">
             evita el exceso
-            <br>producto para mayores de 18 años
+            <br />producto para mayores de 18 años
           </h4>
         </div>
 
@@ -90,13 +92,10 @@ you born?
         </div>
       </div>
       <div class="number-in-footer">
-        <img :src="phonenumberImage" alt="" class="footer-logo">
+        <img :src="phonenumberImage" alt class="footer-logo" />
       </div>
     </div>
-    <Modal 
-      v-if="showModal"
-      v-bind:wichModal="wichModal"
-      @close="showModal = false"/>
+    <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
   </div>
 </template>
 
@@ -108,12 +107,11 @@ import coorsphrase from "@/assets/miller-high-logo-phrase.png";
 import coorscenteredlogo from "@/assets/miller-high-life-centered-logo.png";
 import phonenumber from "@/assets/800CERVEZA.png";
 
-
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
 
-import Modal from '@/components/Modal'
-import FacebookButton from '@/components/FacebookButton'
+import Modal from "@/components/Modal";
+import FacebookButton from "@/components/FacebookButton";
 
 export default {
   name: "AgeGate",
@@ -132,7 +130,7 @@ export default {
       coorscenteredlogoImage: coorscenteredlogo,
       phonenumberImage: phonenumber,
       showModal: false,
-      wichModal: 'terms'
+      wichModal: "terms"
     };
   },
   computed: {
@@ -154,17 +152,17 @@ export default {
       } else {
         setTimeout(() => {
           axios
-              .get(
-                `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5def8589787d690d08439f86&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
-              )
-              .then(axiosResponse => {
-                setTimeout(() => {
-                  this.setAgeGateTokenAction(true);
-                }, 200)
-              })
-              .catch(e => {
-                this.errors.push(e);
-              });
+            .get(
+              `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5def8589787d690d08439f86&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
+            )
+            .then(axiosResponse => {
+              setTimeout(() => {
+                this.setAgeGateTokenAction(true);
+              }, 200);
+            })
+            .catch(e => {
+              this.errors.push(e);
+            });
         }, 100);
       }
     },
@@ -202,8 +200,7 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(() => {
-    });
+    this.$nextTick(() => {});
   }
 };
 </script>
