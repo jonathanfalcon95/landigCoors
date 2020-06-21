@@ -2,11 +2,12 @@
   height: -webkit-fill-available;
   display: flex;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
 
   .hero_logo-container {
   //  width: 30%;
  //   margin-top: -100px;
+ display: flex;
     img {
       max-width: 100%;
       width: 100%;

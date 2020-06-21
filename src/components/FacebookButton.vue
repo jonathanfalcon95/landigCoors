@@ -19,7 +19,7 @@ export default {
     }
   },
   props: {
-    isForResponsive: ''
+    isForResponsive: null
   },
   methods: {
     doLogin: function() {

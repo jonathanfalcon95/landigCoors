@@ -41,7 +41,7 @@
             <!-- <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" /> -->
           </div>
           <p>Intended for legal drinking age consumers only. Privacy Policy</p>
-        
+
           <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
           <FacebookButton
             v-if="!showWarning"
@@ -153,7 +153,7 @@ export default {
         setTimeout(() => {
           axios
             .get(
-              `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5def8589787d690d08439f86&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
+              `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5eea0d7062e7581b14960077&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
             )
             .then(axiosResponse => {
               setTimeout(() => {
