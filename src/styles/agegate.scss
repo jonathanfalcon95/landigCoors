@@ -19,10 +19,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url('../assets/CL-Homepage-Desktop-1920-x-900.jpg' );
-  background-size:cover ;
+  background-image: url('../assets/CL-Homepage-Desktop-1920-x-900.jpg');
+  background-size: cover;
   background-position: right;
-  
+
 
 }
 
@@ -37,10 +37,12 @@
 
 .logo-container {
   width: 25%;
+
   img {
     width: 100%;
     height: auto;
   }
+
   margin-right: 3rem;
 }
 
@@ -50,15 +52,100 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 41.666666666666665%;
+
   // width: 45%;
   // max-width: 320px;
   .title-container {
     width: 100%;
+
     img {
       width: 100%;
     }
   }
 }
+
+.content {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+
+  .footer {
+    
+    width: 100%;
+    height: 300px;
+    background-color: #e7e7e7;
+    display: block;
+    position: relative;
+    padding: 57px 0px 57px 0px;
+
+    .footer-logo {
+     
+      width: 80%;
+      margin: 0px auto 40px auto;
+    }
+
+    .footer-links-container {
+      
+      height: 32px;
+      margin: 0px auto 0px auto;
+      border-bottom: 1px solid #8A8C8E;
+      width: 80%;
+
+      .footer-links {
+       
+        width: 70%;
+        float: left;
+
+        .footer-link {
+         
+          display: inline-block;
+          margin: 0px 30px 0px 0px;
+
+          a {
+          
+            background-color: transparent;
+            font-family: 'AvenirLTStd-Heavy';
+            font-size: 11px;
+            color: #8A8C8E;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .gbgr {
+       
+        width: 30%;
+        height: 32px;
+        float: left;
+        position: relative;
+      }
+    }
+
+    .footer-copy {
+     
+      font-family: 'AvenirLTStd-Book';
+      font-size: 10px;
+      line-height: 14px;
+      color: #8A8C8E;
+      width: 80%;
+      margin: 14px auto 0px auto;
+      a {
+          
+        background-color: transparent;
+        font-family: 'AvenirLTStd-Heavy';
+        font-size: 11px;
+        color: #8A8C8E;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+
 .age-gate-footer {
   background-color: $dark-color;
   width: 100%;
@@ -66,45 +153,55 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
   .logo-in-footer {
     width: 80px;
+
     img {
       width: 100%;
       height: auto;
     }
   }
+
   .number-in-footer {
     width: 180px;
+
     img {
       width: 100%;
       height: auto;
     }
   }
+
   .footer-titles {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     p {
       margin: 0px;
-      font-size: 0.8rem;;
+      font-size: 0.8rem;
+      ;
       font-family: $font-din;
       color: $white-color;
     }
   }
+
   .privacy-container {
     display: flex;
     flex-direction: row;
+
     h4 {
       &:hover {
         cursor: pointer;
         text-decoration: underline;
+
         &.nohover {
           text-decoration: none;
           cursor: default;
         }
       }
+
       color: $white-color;
       font-size: 0.75rem;
       margin-right: 0.5rem;
@@ -117,15 +214,17 @@
 
 .subtitle {
   text-align: center;
+
   h2 {
     margin-bottom: 0px;
     font-family: $font-stratum;
-   // text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: normal;
     color: $dark-color;
     margin-bottom: 1rem;
     font-size: 38px;
     line-height: 48px;
+    font-family: 'AvenirLTStd-Heavy';
   }
 }
 
@@ -133,57 +232,57 @@ input,
 label,
 select,
 button,
-textarea
-{
-	margin:0;
-	border:0;
-	padding:0;
-	display:inline-block;
-	vertical-align:middle;
-	white-space:normal;
-	background:none;
-	line-height:1;	
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
 }
 
-input:focus, button:focus
-{
-  outline:0;
+input:focus,
+button:focus {
+  outline: 0;
   border-color: $darker-color;
 }
 
-input, .submit-button {
-    width: 100%;
-    background-color: transparent;
-    font-family: 'AvenirLTStd-Book';
-    font-size: 16px;
-    text-align: left;
-    color: #202020;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    border-bottom: 1px solid #585857;
-    margin: 0 30px 0 0;
-    padding: 0;
+input,
+.submit-button {
+  width: 100%;
+  background-color: transparent;
+  font-family: 'AvenirLTStd-Book';
+  font-size: 16px;
+  text-align: left;
+  color: #202020;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #585857;
+  margin: 0 30px 0 0;
+  padding: 0;
 }
 
 
 
 .submit-button {
- 
-    width: 156px;
-    height: 40px;
-    background-color: #ffffff;
-    color: transparent;
-    font-size: 16px;
-    line-height: 16px;
-    border-radius: 100px;
-    padding: 14px 0 8px 0;
-    margin: 40px 0 0 0;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 65px;
-    background-image: url("https://www.coorslight.com/sites/CoorsLightRD/files/Chill_button_AV.png");
+
+  width: 156px;
+  height: 40px;
+  background-color: #ffffff;
+  color: transparent;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 100px;
+  padding: 14px 0 8px 0;
+  margin: 40px 0 0 0;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65px;
+  background-image: url("https://www.coorslight.com/sites/CoorsLightRD/files/Chill_button_AV.png");
 
 
 }
@@ -195,9 +294,11 @@ input, .submit-button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   input {
     margin-left: 5px;
   }
+
   &.hasError {
     input {
       border-color: #a74941 !important;
@@ -218,7 +319,7 @@ input, .submit-button {
 
   .logo-container {
     width: 30%;
-    
+
     margin-right: 0rem;
   }
 
@@ -227,6 +328,7 @@ input, .submit-button {
     // width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
+
     .subtitle {
       h2 {
         margin-top: 0px;
@@ -234,6 +336,7 @@ input, .submit-button {
       }
     }
   }
+
   .form-row {
     justify-content: flex-start;
   }
@@ -243,9 +346,11 @@ input, .submit-button {
   .desktop {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .age-gate-footer {
     .number-in-footer {
       width: 145px;
@@ -255,41 +360,48 @@ input, .submit-button {
   .privacy.mobile {
     margin-bottom: 1rem !important;
   }
+
   .age-gate-body {
     height: calc(100vh - 140px);
   }
+
   .width-container {
     flex-direction: column;
     justify-content: center;
     margin-top: -30px;
   }
-  
+
   .logo-container {
     width: 50%;
-    
+
     margin-right: 0rem;
   }
 
   .title-container {
     width: 50%;
   }
+
   .form-container {
     width: 92%;
     align-items: center;
     max-width: 350px;
   }
+
   .form-row {
     justify-content: flex-start;
     margin-left: 0rem;
+
     input:first-child {
       margin-left: 0px;
     }
   }
+
   .subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 98%;
+
     h2 {
       margin-top: 0px;
       font-size: 1.5rem;
@@ -304,20 +416,25 @@ input, .submit-button {
     flex-direction: column;
     height: 240px;
     text-align: center;
+
     .footer-titles {
       width: 85%;
     }
+
     .logo-in-footer {
       display: none;
     }
+
     .privacy-container {
       display: flex;
       flex-direction: column;
+
       h4 {
         margin: 5px 0px;
         text-align: center;
         font-size: 0.8rem;
       }
+
       .bar {
         display: none;
       }
