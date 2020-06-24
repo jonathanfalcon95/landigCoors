@@ -74,9 +74,9 @@
         <div class="footer">
           <div class="footer-logo">
             <img
-              src="https://www.coorslight.com/sites/CoorsLightRD/files/CoorsLight_Logo_footer_0.png"
-              width="100"
-              height="18"
+              src="../assets/CoorsLight_Logo_footer_0.png"
+              width="220"
+              height="60"
               alt="Coors Light"
               title="Coors Light"
             />

@@ -24,8 +24,8 @@
           class="mobile-menu-option">
           <h2 class="stratum">LA CERVEZA</h2>
         </div>
-        <div @click="selectMobileOption('herencia')"
-          :class="{ active: getActiveSection === 'herencia'}"
+        <div @click="selectMobileOption('ourBeer')"
+          :class="{ active: getActiveSection === 'ourBeer'}"
           class="mobile-menu-option">
           <h2 class="stratum">HERENCIA</h2>
         </div>

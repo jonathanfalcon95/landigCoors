@@ -13,22 +13,22 @@
         <TheBeer />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
-      <section id="herencia">
+     <section id="ourBeer">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
-        <OurHeritage />
+        <OurBeer />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
-      <section id="highlifehoy">
+      <!--  <section id="highlifehoy">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
         <HighLifeNow />
-      </section>
+      </section> -->
       <div class="content">
         <div class="footer">
           <div class="footer-logo">
             <img
-              src="https://www.coorslight.com/sites/CoorsLightRD/files/CoorsLight_Logo_footer_0.png"
-              width="100"
-              height="18"
+              src="../assets/CoorsLight_Logo_footer_0.png"
+              width="220"
+              height="60"
               alt="Coors Light"
               title="Coors Light"
             />
@@ -158,7 +158,7 @@
 import Parallax from "vue-parallaxy";
 import Hero from "@/components/Hero";
 import TheBeer from "@/components/TheBeer";
-import OurHeritage from "@/components/OurHeritage";
+import OurBeer from "@/components/OurBeer";
 import HighLifeNow from "@/components/HighLifeNow";
 
 import Menu from "@/components/Menu";
@@ -181,7 +181,7 @@ export default {
     Hero,
     Parallax,
     TheBeer,
-    OurHeritage,
+    OurBeer,
     HighLifeNow,
     Menu,
     MobileMenu,
@@ -217,19 +217,19 @@ export default {
           document.getElementById("app").scroll(0, scrolled);
         },
         lacervezaDown: scrolled => {
-          this.setActiveSection("herencia");
+          this.setActiveSection("ourBeer");
           document.getElementById("app").scroll(0, scrolled);
         },
-        herenciaUp: scrolled => {
+        ourBeerUp: scrolled => {
           this.setActiveSection("lacerveza");
           document.getElementById("app").scroll(0, scrolled);
         },
-        herenciaDown: scrolled => {
+        ourBeerDown: scrolled => {
           this.setActiveSection("highlifehoy");
           document.getElementById("app").scroll(0, scrolled);
         },
         highlifehoyUp: scrolled => {
-          this.setActiveSection("herencia");
+          this.setActiveSection("ourBeer");
           document.getElementById("app").scroll(0, scrolled);
         },
         highlifehoyDown: () => {

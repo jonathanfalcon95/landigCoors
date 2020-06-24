@@ -24,10 +24,10 @@
           class="menu-option">
           <h2 class="stratum">Home</h2>
         </div>
-        <div @click="selectMobileOption('herencia')"
-          :class="{ active: getActiveSection === 'herencia'}"
+        <div @click="selectMobileOption('ourBeer')"
+          :class="{ active: getActiveSection === 'ourBeer'}"
           class="menu-option">
-          <h2 class="stratum">Our Beer</h2>
+          <h2 class="stratum">Nuestra Cerveza</h2>
         </div>
         <!-- <div @click="selectMobileOption('highlifehoy')"
           :class="{ active: getActiveSection === 'highlifehoy'}"
