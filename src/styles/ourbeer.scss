@@ -1,0 +1,195 @@
+.ourBeer-container {
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  height: 703px;
+  width: auto;
+  left: -82px;
+  //display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/1x.jpg');
+  background-size: cover;
+  background-position: right;
+
+  //background-
+  //  background-size: ;
+  //   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-size: 14px;
+  // line-height: 1.42857143;
+  // color: #202020;
+  // box-sizing: border-box;
+  // border: 0;
+  // vertical-align: middle;
+  // position: absolute;
+  // display: block;
+  // bottom: 0;
+  // transition: all 1.5s ease-in-out;
+  // transition-delay: .2s;
+  // left: -322.5px;
+  // height: 803px;
+  // width: auto;
+  .ourBeer_logo-container {
+    .workhorse-content {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "AvenirLight";
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #202020;
+      box-sizing: border-box;
+      width: 60%;
+      position: absolute;
+      z-index: 50;
+      top: 38%;
+      left: 15.8%;
+      transform: translateY(-50%);
+      padding-top: 50px;
+      transition: padding-top 1s ease-in-out;
+
+      .headline {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        line-height: 1.42857143;
+        box-sizing: border-box;
+        color: #202020;
+        width: 50%;
+        font-family: 'AvenirLight';
+        font-size: 24px;
+        font-weight: 300;
+        position: relative;
+        transition: all .5s ease-in-out;
+        top: 0;
+        opacity: 1;
+        p{
+          font-family: 'Avenirlight';
+          font-size: 35px;
+        }
+      }
+
+      .workhorse-product-items {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #202020;
+        box-sizing: border-box;
+        width: 70%;
+        margin: 40px 0 30px 0;
+        position: relative;
+
+        .workhorse-content-product-info-item {
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.42857143;
+          color: #202020;
+          box-sizing: border-box;
+          width: 100%;
+          margin: 0 0 20px 0;
+          padding: 0 0 10px 0;
+          border-bottom: 1px solid #8A8C8E;
+          position: relative;
+          transition: all 1s ease-in-out;
+          top: 0;
+          opacity: 1;
+          transition-delay: 1s;
+
+          .product-info-title {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            box-sizing: border-box;
+            font-family: 'AvenirLTStd-Heavy';
+            font-size: 38px;
+            line-height: 49px;
+            color: #8A8C8E;
+          }
+
+          .product-info-body {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            box-sizing: border-box;
+            font-family: 'AvenirLight';
+            font-size: 25px;
+            line-height: 22px;
+            color: #585857;
+          }
+        }
+      }
+    }
+
+    display: flex;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+  }
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+  //CSS
+  .ourBeer-container {
+    .ourBeer_logo-container {
+      width: 66%;
+    }
+  }
+}

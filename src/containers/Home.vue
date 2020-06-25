@@ -18,9 +18,13 @@
         <OurBeer />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
-       <section id="highlifehoy">
+       <section id="ourbeer2">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
-        <HighLifeNow />
+       <OurBeer2 />
+      </section>
+       <section id="ourbeer3">
+        <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
+       <OurBeer3 />
       </section>
       <div class="content">
         <div class="footer">
@@ -159,8 +163,8 @@ import Parallax from "vue-parallaxy";
 import Hero from "@/components/Hero";
 import HomeCool from "@/components/HomeCool";
 import OurBeer from "@/components/OurBeer";
-import HighLifeNow from "@/components/HighLifeNow";
-
+import OurBeer2 from "@/components/OurBeer2";
+import OurBeer3 from "@/components/OurBeer3";
 import Menu from "@/components/Menu";
 import MobileMenu from "@/components/MobileMenu";
 import Modal from "@/components/Modal";
@@ -182,7 +186,8 @@ export default {
     Parallax,
     HomeCool,
     OurBeer,
-    HighLifeNow,
+    OurBeer2,
+    OurBeer3,
     Menu,
     MobileMenu,
     Modal
@@ -225,14 +230,14 @@ export default {
           document.getElementById("app").scroll(0, scrolled);
         },
         ourBeerDown: scrolled => {
-          this.setActiveSection("highlifehoy");
+          this.setActiveSection("ourbeer2");
           document.getElementById("app").scroll(0, scrolled);
         },
-        highlifehoyUp: scrolled => {
+        ourbeer2Up: scrolled => {
           this.setActiveSection("ourBeer");
           document.getElementById("app").scroll(0, scrolled);
         },
-        highlifehoyDown: () => {
+        ourbeer2Down: () => {
           console.log("");
         }
       }

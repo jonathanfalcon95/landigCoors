@@ -28,28 +28,13 @@
           </div>
           <div class="workhorse-content-product-info-item">
             <div class="product-info-title">
-              <span style="color:#000000;">5g</span>
+              <span style="color:#000000;">5GR</span>
             </div>
             <div class="product-info-body">
               <span style="color:#000000;">De Carbohidratos</span>
             </div>
           </div>
-          <!-- <div class="workhorse-content-product-info-item">
-            <div class="product-info-title">
-              <span style="color:#000000;">0g</span>
-            </div>
-            <div class="product-info-body">
-              <span style="color:#000000;">OF FAT</span>
-            </div>
-          </div> -->
-          <!-- <div class="workhorse-content-product-info-item">
-            <div class="product-info-title">
-              <span style="color:#000000;">&lt;1g</span>
-            </div>
-            <div class="product-info-body">
-              <span style="color:#000000;">OF PROTEIN</span>
-            </div>
-          </div> -->
+         
         </div>
       </div>
     </div>
@@ -81,5 +66,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~@/styles/ourheritage.scss";
+@import "~@/styles/ourbeer.scss";
 </style>
