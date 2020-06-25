@@ -12,7 +12,7 @@ const justScrollTo = (section) => {
   VueScrollTo.scrollTo(`#${section}`, 400, {
     container: '#app',
     easing: 'ease-in',
-    offset: 0,
+    offset: -99,
     force: true,
     cancelable: true,
     onStart: function(element) {

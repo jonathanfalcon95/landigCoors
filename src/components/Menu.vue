@@ -19,8 +19,8 @@
     </div>
     <div class="menu-row">
       <div class="menu-options-container">
-        <div @click="selectMobileOption('lacerveza')"
-          :class="{ active: getActiveSection === 'lacerveza'}" 
+        <div @click="selectMobileOption('home')"
+          :class="{ active: getActiveSection === 'home'}" 
           class="menu-option">
           <h2 class="stratum">Home</h2>
         </div>

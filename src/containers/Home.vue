@@ -8,9 +8,9 @@
         <Hero />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
-      <section id="lacerveza">
+      <section id="homeCool">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
-        <TheBeer />
+        <HomeCool />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
      <section id="ourBeer">
@@ -18,10 +18,10 @@
         <OurBeer />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
-      <!--  <section id="highlifehoy">
+       <section id="highlifehoy">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
         <HighLifeNow />
-      </section> -->
+      </section>
       <div class="content">
         <div class="footer">
           <div class="footer-logo">
@@ -157,7 +157,7 @@
 <script>
 import Parallax from "vue-parallaxy";
 import Hero from "@/components/Hero";
-import TheBeer from "@/components/TheBeer";
+import HomeCool from "@/components/HomeCool";
 import OurBeer from "@/components/OurBeer";
 import HighLifeNow from "@/components/HighLifeNow";
 
@@ -180,7 +180,7 @@ export default {
   components: {
     Hero,
     Parallax,
-    TheBeer,
+    HomeCool,
     OurBeer,
     HighLifeNow,
     Menu,
@@ -206,22 +206,22 @@ export default {
       phonenumberImage: phonenumber,
       placesDirections: {
         heroUp: () => {
-          this.setActiveSection("lacerveza");
+          this.setActiveSection("homeCool");
         },
         heroDown: scrolled => {
-          this.setActiveSection("lacerveza");
+          this.setActiveSection("homeCool");
           document.getElementById("app").scroll(0, scrolled);
         },
-        lacervezaUp: scrolled => {
+        homeCoolUp: scrolled => {
           this.setActiveSection("hero");
           document.getElementById("app").scroll(0, scrolled);
         },
-        lacervezaDown: scrolled => {
+        homeCoolDown: scrolled => {
           this.setActiveSection("ourBeer");
           document.getElementById("app").scroll(0, scrolled);
         },
         ourBeerUp: scrolled => {
-          this.setActiveSection("lacerveza");
+          this.setActiveSection("homeCool");
           document.getElementById("app").scroll(0, scrolled);
         },
         ourBeerDown: scrolled => {

@@ -6,7 +6,7 @@
         <div class="headline">
           <!-- <h4>Get the facts</h4> -->
 
-          <p>CONOCE A COORS LIGHT</p>
+          <p>Conoce a Coors Light</p>
         </div>
 
         <div class="workhorse-product-items">
