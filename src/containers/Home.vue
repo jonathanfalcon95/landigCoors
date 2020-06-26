@@ -13,6 +13,11 @@
         <HomeCool />
         <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
       </section>
+       <section id="homeVideo">
+        <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
+        <HomeVideo />
+        <span class="bottom watcher" v-observe-visibility="visibilityChanged"></span>
+      </section>
      <section id="ourBeer">
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
         <OurBeer />
@@ -153,7 +158,7 @@
           </div>
         </div>
         <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
-      </div>-->
+      </div> -->
     </div>
   </div>
 </template>
@@ -162,6 +167,7 @@
 import Parallax from "vue-parallaxy";
 import Hero from "@/components/Hero";
 import HomeCool from "@/components/HomeCool";
+import HomeVideo from "@/components/HomeVideo";
 import OurBeer from "@/components/OurBeer";
 import OurBeer2 from "@/components/OurBeer2";
 import OurBeer3 from "@/components/OurBeer3";
@@ -185,6 +191,7 @@ export default {
     Hero,
     Parallax,
     HomeCool,
+     HomeVideo,
     OurBeer,
     OurBeer2,
     OurBeer3,
