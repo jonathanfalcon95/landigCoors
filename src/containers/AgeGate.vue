@@ -8,8 +8,8 @@
         <div class="form-container">
           <div class="subtitle">
             <h2>
-              When were
-              <br />you born?
+              ¿Cuando Naciste?
+              <br />
             </h2>
           </div>
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">
@@ -40,7 +40,7 @@
             <br />
             <!-- <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" /> -->
           </div>
-          <p>Intended for legal drinking age consumers only. Privacy Policy</p>
+          <p>Destinado únicamente a consumidores legales en edad de beber.</p>
 
           <input type="submit" text="enviar" class="submit-button" @click="normalLogin($event)" />
           <FacebookButton

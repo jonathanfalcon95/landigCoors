@@ -60,14 +60,14 @@ export default {
 
 
 
-  font-family: $font-dinbold;
+  font-family: 'AvenirLTStd-Heavy';
   //border: 1px solid $dark-color;
   margin-top: 8px;
   //margin-left: 5px;
   padding: 5px 5px !important;
-  margin-right: 40px;
+  //margin-right: 40px;
   width: 87.5%;
-
+  margin-right: 61px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,7 @@ export default {
   }
   &.desktop {
     margin-top: 10px;
+    
     img {
       margin-left: 0.8rem;
     }

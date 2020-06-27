@@ -19,7 +19,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url('../assets/CL-Homepage-Desktop-1920-x-900.jpg');
+  background-image: url('../assets/AGEGATE.jpg');
   background-size: cover;
   background-position: right;
 
@@ -66,7 +66,7 @@
 
 .content {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'AvenirLTStd-Heavy';
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -126,7 +126,7 @@
 
     .footer-copy {
      
-      font-family: 'AvenirLTStd-Book';
+      font-family: 'AvenirLTStd-Heavy';;
       font-size: 10px;
       line-height: 14px;
       color: #8A8C8E;
@@ -182,7 +182,7 @@
       margin: 0px;
       font-size: 0.8rem;
       ;
-      font-family: $font-din;
+      font-family: 'AvenirLTStd-Heavy';
       color: $white-color;
     }
   }
@@ -217,7 +217,7 @@
 
   h2 {
     margin-bottom: 0px;
-    font-family: $font-stratum;
+    font-family: 'AvenirLTStd-Heavy';
     // text-transform: uppercase;
     font-weight: normal;
     color: $dark-color;
@@ -253,7 +253,7 @@ input,
 .submit-button {
   width: 100%;
   background-color: transparent;
-  font-family: 'AvenirLTStd-Book';
+  font-family: 'AvenirLTStd-Heavy';
   font-size: 16px;
   text-align: left;
   color: #202020;
