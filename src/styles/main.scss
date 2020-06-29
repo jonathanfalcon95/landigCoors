@@ -62,7 +62,21 @@ p {
 .bounce-leave-active {
   transform: translateY(-70%);
   padding-top: 250px;
-  transition: padding-top 5s ease-in-out;
+  transition: padding-top .5s ease-in-out;
+}
+
+
+.bounce2-enter-active {
+  transform: translateY(-50%);
+  padding-top: 50px;
+  transition: padding-top .5s ease-in-out;
+  opacity: 1;
+  
+}
+.bounce2-leave-active {
+  transform: translateY(-50%);
+  padding-top: 50px;
+  transition: padding-top .5s ease-in-out;
 }
 @font-face {
   font-family: "DINBold";
