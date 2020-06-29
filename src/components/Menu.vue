@@ -38,10 +38,10 @@
     </div>
     <div class="menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon" target="_blank" href="https://www.instagram.com/millerhighlifemx/"><img :src="inIconImage" /></a>
-        <a class="social-icon facebook-icon" target="_blank" href="https://www.facebook.com/MillerHLMx/"><img :src="fbIconImage" /></a>
+        <a class="social-icon" target="_blank" href="http://www.instagram.com/coorslight"><img :src="inIconImage" /></a>
+        <a class="social-icon facebook-icon" target="_blank" href="http://www.facebook.com/coorslight"><img :src="fbIconImage" /></a>
       
-        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg"><img :src="ytIconImage" /></a>
+        <a class="social-icon" target="_blank" href="http://www.youtube.com/coorslight"><img :src="ytIconImage" /></a>
         
       </div>
     </div>

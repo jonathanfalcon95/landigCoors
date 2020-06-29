@@ -31,107 +31,9 @@
         <span class="top watcher" v-observe-visibility="visibilityChanged"></span>
        <OurBeer3 />
       </section>
-      <div class="content">
-        <div class="footer">
-          <div class="footer-logo">
-            <img
-              src="../assets/CoorsLight_Logo_footer_0.png"
-              width="220"
-              height="60"
-              alt="Coors Light"
-              title="Coors Light"
-            />
-          </div>
-          <div class="footer-links-container">
-            <div class="footer-links">
-              <div class="footer-link">
-                <a href="/contact" target="_blank">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">CONTÁCTENOS</font>
-                  </font>
-                  
-                </a>
-              </div>
-              <div class="footer-link">
-                <a href="http://www.coorslideres.com/" target="_blank">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">LIDERES</font>
-                  </font>
-                </a>
-              </div>
-              <div class="footer-link">
-                <a href="http://www.molsoncoors.com/en/privacy" target="_blank">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">PRIVACIDAD</font>
-                  </font>
-                </a>
-              </div>
-              <div class="footer-link">
-                <a href="http://www.molsoncoors.com/en/terms-and-conditions" target="_blank">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">TÉRMINOS Y CONDICIONES</font>
-                  </font>
-                </a>
-              </div>
-            </div>
-            <div class="gbgr">
-              <a
-                href="http://www.molsoncoors.com/en/sustainability/responsibly-refreshing"
-                target="_blank"
-              >
-                <img
-                  src="https://www.coorslight.com/sites/CoorsLightRD/files/CR_284x24_Gray.png"
-                  width="200"
-                  height="18"
-                  alt="Celebrar con responsabilidad"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="footer-copy">
-            <p>
-              <font style="vertical-align: inherit;">
-                <font
-                  style="vertical-align: inherit;"
-                >No comparta con nadie menor de la edad legal para beber.</font>
-              </font>
-              <br />
-              <font style="vertical-align: inherit;">
-                <font
-                  style="vertical-align: inherit;"
-                >© 2020 Coors Brewing Company, Golden, CO. El acceso y uso de este sitio web está sujeto a la</font>
-              </font>
-              <a href="http://www.molsoncoors.com/en/privacy" target="_blank">
-                <u>
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Política de Privacidad</font>
-                  </font>
-                </u>
-              </a>
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">&nbsp;y los</font>
-              </font>
-              <u>
-                <a href="http://www.molsoncoors.com/en/terms-and-conditions" target="_blank">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Términos y Condiciones</font>
-                  </font>
-                </a>
-              </u>
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">.</font>
-              </font>
-              <a href="/subscribe">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">¡Manténgase actualizado!</font>
-                </font>
-              </a>&nbsp;
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="footer-container">
+     
+<!-- commet to footer  -->
+      <div class="footer-container">
         <div class="age-gate-footer">
           <div class="logo-in-footer">
             <img :src="mhlcenteredlogoImage" alt class="footer-logo" />
@@ -153,12 +55,12 @@
               <p>© 2020 Coors Brewing Co. Y ™/® Propiedad de Coors Brewing Company, Denver, CO USA.</p>
             </div>
           </div>
-          <div class="number-in-footer">
-            <img :src="phonenumberImage" alt class="footer-logo" />
-          </div>
+          <!-- <div class="number-in-footer">
+          <img :src="phonenumberImage" alt class="footer-logo" /> 
+          </div> -->
         </div>
         <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -177,7 +79,7 @@ import Modal from "@/components/Modal";
 
 import parallaxer from "../assets/parallaxer.jpeg";
 
-import mhlcenteredlogo from "@/assets/miller-high-life-centered-logo.png";
+import mhlcenteredlogo from "@/assets/CoorsLight_Logo_footer_0.png";
 import phonenumber from "@/assets/800CERVEZA.png";
 
 import VueScrollTo from "vue-scrollto";

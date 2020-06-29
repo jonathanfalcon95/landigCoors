@@ -36,7 +36,7 @@
    
     //font-family: $font-stratum;
     //font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: #585857;
     text-decoration: none;
     display: block;
@@ -66,17 +66,17 @@
       width: 2.1rem;
       //margin-bottom: 2px;
       img {
-        width: auto;
-    height: 16px;
+     width: auto;
+    height: 27px;
     display: block;
-    margin: 0px auto 0px auto;
+    margin: -10px 25px 0px auto;
       }
     }
     img {
       width: auto;
-      height: 16px;
+      height: 27px;
       display: block;
-      margin: 0px auto 0px auto;
+      margin: -10px 25px 0px auto;
     }
   }
 }
@@ -91,12 +91,13 @@
    // padding-top: 5px;
    margin: 0px 0px 0px 0px;
     img {
-      width: 85%;
-      padding-top: 20px;
+      width: 70%;
+      padding-top: 17px;
      // max-width: 130px;
-      height: auto;
+       margin-left: 16px; 
+     height: auto;
       display: block;
-      margin: 0px 0px 0px 0px;
+     // margin: 0px 0px 0px 0px;
       &:hover {
         cursor: pointer;
       }
