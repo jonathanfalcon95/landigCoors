@@ -1,3 +1,5 @@
+
+
 .ourBeer-container {
   height: -webkit-fill-available;
   display: flex;
@@ -62,7 +64,8 @@
         transition: all .5s ease-in-out;
         top: 0;
         opacity: 1;
-        p{
+
+        p {
           font-family: 'Avenirlight';
           font-size: 35px;
         }
@@ -188,8 +191,26 @@
 
   //CSS
   .ourBeer-container {
+    background-position: left;
     .ourBeer_logo-container {
       width: 66%;
+
+      .workhorse-content {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #202020;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 50;
+        top: 40%;
+        transform: translateY(-50%);
+        padding-top: 50px;
+        transition: padding-top 1s ease-in-out;
+        width: 80%;
+        left: 10%;
+      }
     }
   }
 }

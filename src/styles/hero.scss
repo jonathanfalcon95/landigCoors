@@ -9,6 +9,7 @@
  //   margin-top: -100px;
  display: flex;
     img {
+      src: url('../assets/ENFRIADO.png') !important;
       max-width: 100%;
       width: 100%;
       height: auto;
@@ -77,8 +78,24 @@
   
   //CSS
   .hero-container {
+    height: -webkit-fill-available;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    
     .hero_logo-container {
-      width: 66%;
+    //  width: 30%;
+   //   margin-top: -100px;
+   display: flex;
+      img {
+        src: url('../assets/ENFRIADO.png') !important;
+        //max-width: 100%;
+        width: 100%;
+      //  height: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
     }
   }
 }

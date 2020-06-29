@@ -1,8 +1,8 @@
 <template>
   <div class="ourBeer3-container" ref="ourBeer3" id="ourBeer3">
     <div class="ourBeer3_logo-container">
-      <!-- <img :src="coorslogoImage" alt /> -->
-      <div class="workhorse-content">
+    <transition name="bounce">
+        <div v-if="getActiveSection==='ourbeer3'" class="workhorse-content">
         <div class="workhorse-icons">
           <div class="workhorse-content-icon">
             <div class="workhorse-icon">
@@ -46,7 +46,7 @@
           </div>
        
         </div>
-      </div>
+      </div></transition>
     </div>
   </div>
 </template>
@@ -62,7 +62,7 @@ export default {
     coorslogoImage: coorslogo
   },
   computed: {
-    ...mapGetters([""])
+    ...mapGetters(["getActiveSection"])
   },
   data() {
     return {

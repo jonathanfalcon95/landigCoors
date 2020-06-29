@@ -46,7 +46,7 @@
   }
   .mobile-menu-row {
     text-align: center;
-    color: white;
+    color: black;
   }
 }
 
@@ -137,11 +137,25 @@
   display: flex;
   justify-content: center;
   .social-icon {
-    height: 3rem;
-    width: 3rem;
+    //height: 2rem;
+    //width: 2rem;
+    &.facebook-icon {
+     // height: 2.1rem;
+    // width: 3.1rem;
+      //margin-bottom: 2px;
+      img {
+     width: auto;
+    height: 25px;
+    display: flex;
+ // margin: -10px 25px 0px auto;
+      }
+    }
     img {
-       width: 3rem;
-       height: auto;
+      width: auto;
+      height: 27px;
+      display: block;
+      padding-right: 10px;
+     // margin: -10px 25px 0px auto;
     }
   }
 }

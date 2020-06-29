@@ -19,36 +19,33 @@
     </div>
     <div class="mobile-menu-row">
       <div class="mobile-menu-options-container">
-        <div @click="selectMobileOption('homeCool')"
-          :class="{ active: getActiveSection === 'homeCool'}" 
+        <div @click="selectMobileOption('home')"
+          :class="{ active: getActiveSection === 'home'}" 
           class="mobile-menu-option">
-          <h2 class="stratum">LA CERVEZA</h2>
+          <h2 class="stratum">Home</h2>
         </div>
         <div @click="selectMobileOption('ourBeer')"
           :class="{ active: getActiveSection === 'ourBeer'}"
           class="mobile-menu-option">
-          <h2 class="stratum">HERENCIA</h2>
+          <h2 class="stratum">Nuestra Cerveza</h2>
         </div>
-        <div @click="selectMobileOption('highlifehoy')"
-          :class="{ active: getActiveSection === 'highlifehoy'}"
-          class="mobile-menu-option">
-          <h2 class="stratum">MILLER HIGH LIFE HOY</h2>
-        </div>
+       
       </div>
     </div>
     <div class="mobile-menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon" target="_blank" href="https://www.facebook.com/MillerHLMx/"><img :src="fbIconImage" /></a>
-        <a class="social-icon" target="_blank" href="https://twitter.com/millerhlmx?lang=es"><img :src="twIconImage" /></a>
-        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCFvWOfeL9kHGiUjgu665yQg"><img :src="ytIconImage" /></a>
-        <a class="social-icon" target="_blank" href="https://www.instagram.com/millerhighlifemx/"><img :src="inIconImage" /></a>
+        <a class="social-icon" target="_blank" href="http://www.instagram.com/coorslight"><img :src="inIconImage" /></a>
+        <a class="social-icon facebook-icon" target="_blank" href="http://www.facebook.com/coorslight"><img :src="fbIconImage" /></a>
+      
+        <a class="social-icon" target="_blank" href="http://www.youtube.com/coorslight"><img :src="ytIconImage" /></a>
+       
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import mhlicon from "@/assets/miller-high-life-icon.png";
+import mhlicon from "@/assets/CoorsLight_Logo_nav_3.png";;
 import fbIcon from "@/assets/public_facebook.png";
 import twIcon from "@/assets/public_twitter.png";
 import ytIcon from "@/assets/public_youtube.png";

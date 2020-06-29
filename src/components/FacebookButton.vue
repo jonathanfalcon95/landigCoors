@@ -74,7 +74,7 @@ export default {
  // background: $light-color;
   align-self: center;
   cursor: pointer;
-  color: $dark-color;
+  color: black;
   height: 35px !important;
   img {
     height: 25px;
@@ -82,7 +82,7 @@ export default {
     margin-right: 10px;
   }
   &:focus {
-    border-color: $darker-color;
+    border-color: black;
   }
   &.desktop {
     margin-top: 10px;
