@@ -66,7 +66,6 @@
 </template>
 
 <script>
-import Parallax from "vue-parallaxy";
 import Hero from "@/components/Hero";
 import HomeCool from "@/components/HomeCool";
 import HomeVideo from "@/components/HomeVideo";
@@ -91,7 +90,6 @@ export default {
   props: ["id"],
   components: {
     Hero,
-    Parallax,
     HomeCool,
      HomeVideo,
     OurBeer,
@@ -146,9 +144,9 @@ export default {
           this.setActiveSection("ourBeer");
           document.getElementById("app").scroll(0, scrolled);
         },
-        ourbeer2Down: () => {
-          console.log("");
-        }
+        // ourbeer2Down: () => {
+        //   console.log("");
+        // }
       }
     };
   },
@@ -184,9 +182,9 @@ export default {
           offset: 0,
           force: true,
           cancelable: true,
-          onStart: function(element) {},
-          onDone: function(element) {},
-          onCancel: function() {},
+          // onStart: function(element) {},
+          // onDone: function(element) {},
+          // onCancel: function() {},
           x: false,
           y: true
         });
@@ -199,15 +197,15 @@ export default {
         offset: 0,
         force: true,
         cancelable: true,
-        onStart: function(element) {
-          // scrolling started
-        },
-        onDone: function(element) {
-          // scrolling is done
-        },
-        onCancel: function() {
-          // scrolling has been interrupted
-        },
+        // onStart: function(element) {
+        //   // scrolling started
+        // },
+        // onDone: function(element) {
+        //   // scrolling is done
+        // },
+        // onCancel: function() {
+        //   // scrolling has been interrupted
+        // },
         x: false,
         y: true
       });

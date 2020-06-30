@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Hamster from "hamsterjs";
+
 import Parallax from 'vue-parallaxy'
 
 import parallaxer from '../assets/parallaxer.jpeg';
@@ -44,7 +44,7 @@ export default {
     Parallax
   },
   created() {
-    this.help();
+   
   },
   data() {
     return {
@@ -56,9 +56,7 @@ export default {
   methods: {
     ...mapActions({
     }),
-    help() {
-      console.log('');
-    },
+   
   }
 };
 </script>

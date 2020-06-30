@@ -15,15 +15,15 @@ const justScrollTo = (section) => {
     offset: -99,
     force: true,
     cancelable: true,
-    onStart: function(element) {
-      // scrolling started
-    },
-    onDone: function(element) {
-      // scrolling is done
-    },
-    onCancel: function() {
-      // scrolling has been interrupted
-    },
+    // onStart: function(element) {
+    //   // scrolling started
+    // },
+    // onDone: function(element) {
+    //   // scrolling is done
+    // },
+    // onCancel: function() {
+    //   // scrolling has been interrupted
+    // },
     x: false,
     y: true
   });

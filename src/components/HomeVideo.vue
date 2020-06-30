@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import coorslogo from "@/assets/1x.jpg";
+//import coorslogo from "@/assets/1x.jpg";
 import ModalVideo from "@/components/ModalVideo";
 import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "homeVideo",
   components: {
-    coorslogoImage: coorslogo,
+ //   coorslogoImage: coorslogo,
     ModalVideo
   },
   computed: {
@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      coorslogoImage: coorslogo,
+   //   coorslogoImage: coorslogo,
       showModal: false,
     };
   },

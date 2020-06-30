@@ -51,14 +51,13 @@ border-top: none; -->
 </template>
 
 <script>
-import Terms from "@/components/Terms";
-import Politics from "@/components/Politics";
+
+
 
 export default {
   name: "Modal",
   components: {
-    Terms,
-    Politics
+  
   },
   props: {
     wichModal: {

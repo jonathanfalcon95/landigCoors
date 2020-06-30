@@ -112,7 +112,7 @@ import phonenumber from "@/assets/800CERVEZA.png";
 
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
-
+import axios from "axios";
 import Modal from "@/components/Modal";
 import FacebookButton from "@/components/FacebookButton";
 import mhlcenteredlogo from "@/assets/CoorsLight_Logo_footer_0.png";
@@ -134,6 +134,7 @@ export default {
       phonenumberImage: phonenumber,
       showModal: false,
       wichModal: "terms",
+      response: undefined,
        mhlcenteredlogoImage: mhlcenteredlogo,
     };
   },
@@ -160,6 +161,7 @@ export default {
               `https://cuamoc.xeerpa.com:8443/discoveruser?clientId=57a058bdee4dc3d82f06fffa&clientPwd=qwbd3udgh2diksKcsG&socialNetwork=FB&appId=5eea0d7062e7581b14960077&userId=${response.authResponse.userID}&userToken=${response.authResponse.accessToken}`
             )
             .then(axiosResponse => {
+             this.response=axiosResponse;
               setTimeout(() => {
                 this.setAgeGateTokenAction(true);
               }, 200);
@@ -177,7 +179,8 @@ export default {
     hideWarning() {
       this.showWarning = false;
     },
-    normalLogin(event) {
+    normalLogin() {
+      
       const { day, month, year } = this;
       if (day && day !== "" && month && month !== "" && year && year !== "") {
         const bDay = Moment(`${day}/${month}/${year}`, "DD/MM/YYYY");

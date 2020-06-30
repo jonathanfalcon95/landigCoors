@@ -14,7 +14,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "Hero",
   components: {
-    coorslogoImage: coorslogo,
+    // coorslogoImage: coorslogo,
   },
   computed: {
     ...mapGetters(

@@ -24,10 +24,10 @@ export default {
   methods: {
     doLogin: function() {
       var vm = this;
-      FB.login(
+      window.FB.login(
         function(response) {
           if (response.status === "connected") {
-            FB.api("/me?fields=email,name,birthday", function(meResponse) {
+            window.FB.api("/me?fields=email,name,birthday", function(meResponse) {
               const xeerpaNeeded = {...response, birthday: meResponse.birthday};
               meResponse.birthday
                 ? vm.$emit("fbLogin", xeerpaNeeded)

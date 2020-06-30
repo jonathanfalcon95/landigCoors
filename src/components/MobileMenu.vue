@@ -27,7 +27,7 @@
         <div @click="selectMobileOption('ourBeer')"
           :class="{ active: getActiveSection === 'ourBeer'}"
           class="mobile-menu-option">
-          <h2 class="stratum">Nuestra Cerveza</h2>
+          <h2 class="stratum">Nuestra_Cerveza</h2>
         </div>
        
       </div>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import mhlicon from "@/assets/CoorsLight_Logo_nav_3.png";;
+import mhlicon from "@/assets/CoorsLight_Logo_nav_3.png";
 import fbIcon from "@/assets/public_facebook.png";
 import twIcon from "@/assets/public_twitter.png";
 import ytIcon from "@/assets/public_youtube.png";

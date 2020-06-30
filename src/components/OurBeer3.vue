@@ -52,21 +52,22 @@
 </template>
 
 <script>
-import coorslogo from "@/assets/1x.jpg";
+
+// import coorslogo from "@/assets/1x.jpg";
 
 import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "ourBeer3",
   components: {
-    coorslogoImage: coorslogo
+    
   },
   computed: {
     ...mapGetters(["getActiveSection"])
   },
   data() {
     return {
-      coorslogoImage: coorslogo
+     
     };
   },
   methods: {
