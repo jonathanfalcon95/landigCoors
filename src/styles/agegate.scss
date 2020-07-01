@@ -64,86 +64,86 @@
   }
 }
 
-.content {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: 'AvenirLTStd-Heavy';
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  box-sizing: border-box;
+// .content {
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//   font-family: 'AvenirLTStd-Heavy';
+//   font-size: 14px;
+//   line-height: 1.42857143;
+//   color: #333;
+//   box-sizing: border-box;
 
-  .footer {
+//   .footer {
     
-    width: 100%;
-    height: 300px;
-    background-color: #e7e7e7;
-    display: block;
-    position: relative;
-    padding: 57px 0px 57px 0px;
+//     width: 100%;
+//     height: 300px;
+//     background-color: #e7e7e7;
+//     display: block;
+//     position: relative;
+//     padding: 57px 0px 57px 0px;
 
-    .footer-logo {
+//     .footer-logo {
      
-      width: 80%;
-      margin: 0px auto 40px auto;
-    }
+//       width: 80%;
+//       margin: 0px auto 40px auto;
+//     }
 
-    .footer-links-container {
+//     .footer-links-container {
       
-      height: 32px;
-      margin: 0px auto 0px auto;
-      border-bottom: 1px solid #8A8C8E;
-      width: 80%;
+//       height: 32px;
+//       margin: 0px auto 0px auto;
+//       border-bottom: 1px solid #8A8C8E;
+//       width: 80%;
 
-      .footer-links {
+//       .footer-links {
        
-        width: 70%;
-        float: left;
+//         width: 70%;
+//         float: left;
 
-        .footer-link {
+//         .footer-link {
          
-          display: inline-block;
-          margin: 0px 30px 0px 0px;
+//           display: inline-block;
+//           margin: 0px 30px 0px 0px;
 
-          a {
+//           a {
           
-            background-color: transparent;
-            font-family: 'AvenirLTStd-Heavy';
-            font-size: 11px;
-            color: #8A8C8E;
-            text-decoration: none;
-          }
-        }
-      }
+//             background-color: transparent;
+//             font-family: 'AvenirLTStd-Heavy';
+//             font-size: 11px;
+//             color: #8A8C8E;
+//             text-decoration: none;
+//           }
+//         }
+//       }
 
-      .gbgr {
+//       .gbgr {
        
-        width: 30%;
-        height: 32px;
-        float: left;
-        position: relative;
-      }
-    }
+//         width: 30%;
+//         height: 32px;
+//         float: left;
+//         position: relative;
+//       }
+//     }
 
-    .footer-copy {
+//     .footer-copy {
      
-      font-family: 'AvenirLTStd-Heavy';;
-      font-size: 10px;
-      line-height: 14px;
-      color: #8A8C8E;
-      width: 80%;
-      margin: 14px auto 0px auto;
-      a {
+//       font-family: 'AvenirLTStd-Heavy';;
+//       font-size: 10px;
+//       line-height: 14px;
+//       color: #8A8C8E;
+//       width: 80%;
+//       margin: 14px auto 0px auto;
+//       a {
           
-        background-color: transparent;
-        font-family: 'AvenirLTStd-Heavy';
-        font-size: 11px;
-        color: #8A8C8E;
-        text-decoration: none;
-      }
-    }
-  }
+//         background-color: transparent;
+//         font-family: 'AvenirLTStd-Heavy';
+//         font-size: 11px;
+//         color: #8A8C8E;
+//         text-decoration: none;
+//       }
+//     }
+//   }
 
-}
+// }
 
 
 .age-gate-footer {
@@ -155,8 +155,7 @@
   align-items: center;
 
   .logo-in-footer {
-   // width: 80px;
-
+   
     img {
       width: 200px;
       height: auto;
@@ -169,21 +168,20 @@
     img {
       width: 100%;
       height: auto;
-
     }
   }
 
   .footer-titles {
-    //display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 
     p {
       margin: 0px;
       font-size: 0.8rem;
       ;
-      font-family: 'AvenirLight';
+      font-family: 'AvenirLTStd-Heavy';
       color: black;
     }
   }
@@ -193,7 +191,7 @@
     flex-direction: row;
 
     h4 {
-      font-family: 'AvenirLight';
+      font-family: 'AvenirLTStd-Heavy';
       &:hover {
         cursor: pointer;
         text-decoration: underline;

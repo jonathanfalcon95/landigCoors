@@ -74,9 +74,11 @@
         <div class="age-gate-footer">
           <div class="logo-in-footer">
             <img :src="mhlcenteredlogoImage" alt class="footer-logo" />
+            
           </div>
           <div class="footer-titles">
             <div class="privacy-container">
+             
               <h4 class="privacy" @click="popUpModal('terms')">términos y condiciones</h4>
               <h4 class="privacy bar">|</h4>
               <h4 class="privacy" @click="popUpModal('politics')">políticas de privacidad</h4>
@@ -96,9 +98,9 @@
           <img :src="phonenumberImage" alt class="footer-logo" /> 
           </div> -->
         </div>
-        <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
+        
       </div>
-    <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
+    <!-- <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" /> -->
   </div>
 </template>
 

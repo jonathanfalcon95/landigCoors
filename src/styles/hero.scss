@@ -10,9 +10,11 @@
  display: flex;
     img {
       src: url('../assets/ENFRIADO.png') !important;
-      max-width: 100%;
+     //@extend max-width: 100%;
       width: 100%;
-      height: auto;
+      height: 755px;
+      margin-bottom: 0px;
+      padding-bottom: 0%;
       display: inline-block;
     }
   }
