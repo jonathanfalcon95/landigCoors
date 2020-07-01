@@ -66,7 +66,7 @@
 
 // .content {
 //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-//   font-family: 'AvenirLTStd-Heavy';
+//   font-family: 'AvenirLight';
 //   font-size: 14px;
 //   line-height: 1.42857143;
 //   color: #333;
@@ -107,7 +107,7 @@
 //           a {
           
 //             background-color: transparent;
-//             font-family: 'AvenirLTStd-Heavy';
+//             font-family: 'AvenirLight';
 //             font-size: 11px;
 //             color: #8A8C8E;
 //             text-decoration: none;
@@ -126,7 +126,7 @@
 
 //     .footer-copy {
      
-//       font-family: 'AvenirLTStd-Heavy';;
+//       font-family: 'AvenirLight';;
 //       font-size: 10px;
 //       line-height: 14px;
 //       color: #8A8C8E;
@@ -135,7 +135,7 @@
 //       a {
           
 //         background-color: transparent;
-//         font-family: 'AvenirLTStd-Heavy';
+//         font-family: 'AvenirLight';
 //         font-size: 11px;
 //         color: #8A8C8E;
 //         text-decoration: none;
@@ -180,8 +180,8 @@
     p {
       margin: 0px;
       font-size: 0.8rem;
-      ;
-      font-family: 'AvenirLTStd-Heavy';
+      text-transform: uppercase;
+      font-family: 'AvenirLight';
       color: black;
     }
   }
@@ -191,7 +191,7 @@
     flex-direction: row;
 
     h4 {
-      font-family: 'AvenirLTStd-Heavy';
+      font-family: 'AvenirLight';
       &:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -224,7 +224,7 @@
     margin-bottom: 1rem;
     font-size: 38px;
     line-height: 48px;
-    font-family: 'AvenirLTStd-Heavy';
+    //font-family: 'AvenirLight';
   }
 }
 
@@ -253,7 +253,7 @@ input,
 .submit-button {
   width: 100%;
   background-color: transparent;
-  font-family: 'AvenirLTStd-Heavy';
+  font-family: 'AvenirLight';
   font-size: 16px;
   text-align: left;
   color: #202020;
@@ -332,7 +332,7 @@ input,
     .subtitle {
       h2 {
         margin-top: 0px;
-        font-family: "AvenirLTStd-Heavy";
+        font-family: "AvenirLight";
       }
     }
   }

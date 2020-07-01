@@ -27,15 +27,15 @@
         <div @click="selectMobileOption('ourBeer')"
           :class="{ active: getActiveSection === 'ourBeer'}"
           class="mobile-menu-option">
-          <h2 class="stratum">Nuestra_Cerveza</h2>
+          <h2 class="stratum">Nuestra Cerveza</h2>
         </div>
        
       </div>
     </div>
     <div class="mobile-menu-social-icons-container">
       <div class="social-icons">
-        <a class="social-icon" target="_blank" href="http://www.instagram.com/coorslight"><img :src="inIconImage" /></a>
-        <a class="social-icon facebook-icon" target="_blank" href="http://www.facebook.com/coorslight"><img :src="fbIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://www.instagram.com/coorslight_mx/?hl=es-la"><img :src="inIconImage" /></a>
+        <a class="social-icon facebook-icon" target="_blank" href="https://www.facebook.com/coorslightmx/"><img :src="fbIconImage" /></a>
       
         <a class="social-icon" target="_blank" href="http://www.youtube.com/coorslight"><img :src="ytIconImage" /></a>
        

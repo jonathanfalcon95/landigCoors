@@ -100,7 +100,7 @@
         </div>
         
       </div>
-    <!-- <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" /> -->
+    <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
   </div>
 </template>
 
