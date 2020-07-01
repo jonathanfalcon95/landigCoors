@@ -21,7 +21,7 @@
   align-items: center;
   background-image: url('../assets/AGEGATE.jpg');
   background-size: cover;
-  background-position: right;
+  background-position: center;
 
 
 }
@@ -390,7 +390,7 @@ input,
   .form-row {
     justify-content: flex-start;
     margin-left: 0rem;
-
+    width: auto;
     input:first-child {
       margin-left: 0px;
     }

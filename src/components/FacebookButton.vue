@@ -119,7 +119,7 @@ export default {
     &.mobile {
       margin-top: 1rem;
       align-self: flex-start;
-      // margin-left: 3rem;
+      margin-left: 20px;
     }
   }
 }
@@ -143,6 +143,7 @@ export default {
       margin-left: 0rem;
       width: 89%;
       text-align: center;
+      margin-left: 18px;
       span {
         font-size: 0.8rem;
         margin: 0px;

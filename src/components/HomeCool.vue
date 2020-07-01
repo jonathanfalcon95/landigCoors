@@ -15,8 +15,7 @@
               <div class="workhorse-icon">
                 <img
                   src="../assets/icon-Cold-Filtered.png"
-                  width="60"
-                  height="60"
+                 
                   alt="Cold Filtered"
                   title="Cold Filtered"
                 />
@@ -34,8 +33,7 @@
               <div class="workhorse-icon">
                 <img
                   src="../assets/icon-Cold-Lagered.png"
-                  width="60"
-                  height="60"
+                 
                   alt="Cold Lagered"
                   title="Cold Lagered"
                 />
@@ -50,8 +48,7 @@
               <div class="workhorse-icon">
                 <img
                   src="../assets/icon-Cold-Packaged.png"
-                  width="60"
-                  height="60"
+                 
                   alt="Cold Packaged"
                   title="Cold Packaged"
                 />

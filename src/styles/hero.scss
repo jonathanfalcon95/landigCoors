@@ -92,11 +92,13 @@
       img {
         src: url('../assets/ENFRIADO.png') !important;
         //max-width: 100%;
-        width: 100%;
-      //  height: auto;
+        width: auto;
+        height: auto;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        align-items: center;
+        justify-content: left;
+        position: left;
+        padding-right: 1085px;
       }
     }
   }
