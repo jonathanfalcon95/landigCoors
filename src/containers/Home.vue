@@ -55,9 +55,9 @@
               <p>© 2020 Coors Brewing Co. Y ™/® Propiedad de Coors Brewing Company, Denver, CO USA.</p>
             </div>
           </div>
-          <!-- <div class="number-in-footer">
+          <div class="number-in-footer">
           <img :src="phonenumberImage" alt class="footer-logo" /> 
-          </div> -->
+          </div>
         </div>
         <Modal v-if="showModal" v-bind:wichModal="wichModal" @close="showModal = false" />
       </div>
@@ -79,7 +79,7 @@ import Modal from "@/components/Modal";
 import parallaxer from "../assets/parallaxer.jpeg";
 
 import mhlcenteredlogo from "@/assets/CoorsLight_Logo_footer_0.png";
-import phonenumber from "@/assets/800CERVEZA.png";
+import phonenumber from "@/assets/Llamanossincosto-04.png";
 
 import VueScrollTo from "vue-scrollto";
 

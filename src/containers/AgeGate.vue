@@ -94,9 +94,9 @@
               <p>© 2020 Coors Brewing Co. Y ™/® Propiedad de Coors Brewing Company, Denver, CO USA.</p>
             </div>
           </div>
-          <!-- <div class="number-in-footer">
+          <div class="number-in-footer">
           <img :src="phonenumberImage" alt class="footer-logo" /> 
-          </div> -->
+          </div>
         </div>
         
       </div>
@@ -110,7 +110,7 @@ import Moment from "moment";
 import coorslogo from "@/assets/miller-high-life-logo.png";
 import coorsphrase from "@/assets/miller-high-logo-phrase.png";
 import coorscenteredlogo from "@/assets/miller-high-life-centered-logo.png";
-import phonenumber from "@/assets/800CERVEZA.png";
+import phonenumber from "@/assets/Llamanossincosto-04.png";
 
 import { mapActions } from "vuex";
 import { mapGetters } from "vuex";
