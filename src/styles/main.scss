@@ -52,17 +52,33 @@ p {
   opacity: 0.5;
   transform: translateX(300px);
 }
+.bounceE-enter-active {
+  transform: translateY(70%);
+  padding-top: 250px;
+  transition: padding-top .5s ease-in-out;
+  opacity: 1;
+ 
+    
+}
+.bounceE-leave-active {
+  transform: translateY(70%);
+  padding-top: 250px;
+  transition: padding-top .5s ease-in-out;
+  //transition-delay: 50s
+}
 .bounce-enter-active {
   transform: translateY(-70%);
   padding-top: 250px;
   transition: padding-top .5s ease-in-out;
   opacity: 1;
-  
+ 
+    
 }
 .bounce-leave-active {
   transform: translateY(-70%);
   padding-top: 250px;
   transition: padding-top .5s ease-in-out;
+  //transition-delay: 50s
 }
 
 

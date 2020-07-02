@@ -1,21 +1,28 @@
 .hero-container {
-  height: -webkit-fill-available;
-  display: flex;
-  justify-content: center;
-  //align-items: center;
+//   height: -webkit-fill-available;
+//   display: flex;
+//  justify-content: center;
+//   align-items: center;
 
   .hero_logo-container {
-  //  width: 30%;
- //   margin-top: -100px;
- display: flex;
+    //  width: 30%;
+    //   margin-top: -100px;
+   // display: flex;
+
     img {
-      src: url('../assets/ENFRIADO.png') !important;
-     //@extend max-width: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      text-align: center;
+       box-sizing: border-box;
+      border: 0;
+      vertical-align: middle;
+       max-width: 100%;
       width: 100%;
-      height: 755px;
-      margin-bottom: 0px;
-      padding-bottom: 0%;
-      display: inline-block;
+      height: 100%;
+      display: flex;
     }
   }
 }
@@ -27,9 +34,27 @@
 */
 
 @media (min-width: 1281px) {
-  
-  //CSS
-  
+  .hero-container {
+    //   height: -webkit-fill-available;
+    //   display: flex;
+    //  justify-content: center;
+    //   align-items: center;
+    
+      .hero_logo-container {
+      //  width: 30%;
+      //   margin-top: -100px;
+      // display: flex;
+    
+        img {
+         
+          width: 100%;
+          height: 750px;
+          display: flex;
+        }
+      }
+    }
+    
+
 }
 
 /* 
@@ -38,9 +63,27 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  //CSS
-  
+
+  .hero-container {
+    //   height: -webkit-fill-available;
+    //   display: flex;
+    //  justify-content: center;
+    //   align-items: center;
+    
+      .hero_logo-container {
+      //  width: 30%;
+      //   margin-top: -100px;
+      // display: flex;
+    
+        img {
+         
+          width: 100%;
+          height: 750px;
+          display: flex;
+        }
+      }
+    }
+
 }
 
 /* 
@@ -49,9 +92,27 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  //CSS
-  
+
+  .hero-container {
+    //   height: -webkit-fill-available;
+    //   display: flex;
+    //  justify-content: center;
+    //   align-items: center;
+    
+      .hero_logo-container {
+      //  width: 30%;
+      //   margin-top: -100px;
+      // display: flex;
+    
+        img {
+         
+          width: 100%;
+          height: 750px;
+          display: flex;
+        }
+      }
+    }
+
 }
 
 /* 
@@ -60,15 +121,15 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+
   //CSS
-  
+
 }
 
 @media (min-width: 600px) and (max-width: 768px) and (orientation: landscape) {
-  
+
   //CSS
-  
+
 }
 
 /* 
@@ -77,29 +138,7 @@
 */
 
 @media (min-width: 320px) and (max-width: 600px) {
-  
+
   //CSS
-  .hero-container {
-    height: -webkit-fill-available;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
-    
-    .hero_logo-container {
-    //  width: 30%;
-   //   margin-top: -100px;
-   display: flex;
-      img {
-        src: url('../assets/ENFRIADO.png') !important;
-        //max-width: 100%;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        position: left;
-        padding-right: 1085px;
-      }
-    }
-  }
+  
 }

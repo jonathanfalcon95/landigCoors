@@ -1,7 +1,7 @@
 <template>
   <div class="ourBeer-container" ref="ourBeer" id="ourBeer">
     <div class="ourBeer_logo-container">
-     <transition name="bounce">
+     <transition name="bounce" :duration="{ enter: 500, leave: 2000000 }">
         <div v-if="getActiveSection==='ourBeer'" class="workhorse-content">
         <div class="headline">
           <!-- <h4>Get the facts</h4> -->
