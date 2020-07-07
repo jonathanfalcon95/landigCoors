@@ -1,7 +1,7 @@
 <template>
   <div class="workhorse-content">
     <div class="headline">
-      <h3>Nada más frío que esto</h3>
+      <h3>Tan fría como las montañas</h3>
 
       <p>Cuando las montañas se pintan azul, está fría para refrescarte y disfrutarse.</p>
     </div>

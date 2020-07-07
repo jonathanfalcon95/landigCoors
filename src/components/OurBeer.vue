@@ -20,7 +20,7 @@
           </div>
           <div class="workhorse-content-product-info-item">
             <div class="product-info-title">
-              <span style="color:#000000;">103</span>
+              <span style="color:#000000;">102</span>
             </div>
             <div class="product-info-body">
               <span style="color:#000000;">Calorías por cada 355 ml</span>
@@ -28,7 +28,7 @@
           </div>
           <div class="workhorse-content-product-info-item">
             <div class="product-info-title">
-              <span style="color:#000000;">5GR</span>
+              <span style="color:#000000;">5g</span>
             </div>
             <div class="product-info-body">
               <span style="color:#000000;">De Carbohidratos</span>

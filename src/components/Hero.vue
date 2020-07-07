@@ -1,7 +1,7 @@
 <template>
   <div class="hero-container" ref="Hero" id="Hero">
     <div class="hero_logo-container">
-      <img :src="coorslogoImage" alt="" >
+      <!-- <img :src="coorslogoImage" alt="" > -->
     </div>
   </div>
 </template>
