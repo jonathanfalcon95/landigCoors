@@ -37,7 +37,7 @@
         <a class="social-icon" target="_blank" href="https://www.instagram.com/coorslight_mx/?hl=es-la"><img :src="inIconImage" /></a>
         <a class="social-icon facebook-icon" target="_blank" href="https://www.facebook.com/coorslightmx/"><img :src="fbIconImage" /></a>
       
-        <a class="social-icon" target="_blank" href="http://www.youtube.com/coorslight"><img :src="ytIconImage" /></a>
+        <a class="social-icon" target="_blank" href="https://www.youtube.com/user/coorslightmx"><img :src="ytIconImage" /></a>
        
       </div>
     </div>

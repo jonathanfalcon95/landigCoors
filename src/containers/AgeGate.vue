@@ -15,7 +15,7 @@
           <div class="form-row" :class="showWarning ? 'hasError' : '' ">
             <input
               ref="day"
-              type="text"
+              type="tel"
               maxlength="2"
               placeholder="DD"
               v-on:keyup="focusNextSibling($event)"
@@ -23,7 +23,7 @@
             />
             <input
               ref="month"
-              type="text"
+              type="tel"
               maxlength="2"
               placeholder="MM"
               v-on:keyup="focusNextSibling($event)"
@@ -31,7 +31,7 @@
             />
             <input
               ref="year"
-              type="text"
+              type="tel"
               maxlength="4"
               placeholder="YYYY"
               v-on:keyup="focusNextSibling($event)"
@@ -151,6 +151,7 @@ export default {
       this.showWarning = true;
     },
     fbLogin(response) {
+      console.log(response);
       const bDay = Moment(`${response.birthday}`, "MM/DD/YYYY");
       const today = Moment();
       const age = today.diff(bDay, "years");

@@ -83,15 +83,15 @@ p {
 
 
 .bounce2-enter-active {
-  transform: translateY(-50%);
-  padding-top: 50px;
+  transform: translateY(-60%);
+  padding-top: 60px;
   transition: padding-top .5s ease-in-out;
   opacity: 1;
   
 }
 .bounce2-leave-active {
-  transform: translateY(-50%);
-  padding-top: 50px;
+  transform: translateY(-60%);
+  padding-top: 60px;
   transition: padding-top .5s ease-in-out;
 }
 @font-face {

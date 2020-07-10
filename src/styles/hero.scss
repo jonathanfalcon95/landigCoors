@@ -1,9 +1,10 @@
 .hero-container {
   height: -webkit-fill-available;
   display: flex;
+ 
   //justify-content: center;
   //align-items: center;
-  height: 803px;
+ // height: 803px;
   width: auto;
   //left: -82px;
   //margin-top: 100px;
@@ -190,12 +191,16 @@
 @media (min-width: 320px) and (max-width: 600px) {
 
   .hero-container {
-    //   height: -webkit-fill-available;
+     // height: -webkit-fill-available;
     //   display: flex;
     //  justify-content: center;
     //   align-items: center;
+    margin-top: 74px;
+    height: 503px;
+    width: auto;
+    background-image: url('../assets/MADE TO CHILL.png');
     background-size: cover;
-    background-position: right;
+    background-position: center;
       .hero_logo-container {
       //  width: 30%;
       //   margin-top: -100px;
