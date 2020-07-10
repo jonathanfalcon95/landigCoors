@@ -218,18 +218,18 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 768px) and (orientation: landscape) {
+// @media (min-width: 600px) and (max-width: 768px) and (orientation: landscape) {
 
-  //CSS
+//   //CSS
 
-}
+// }
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
   //CSS
   .ourBeer2-container {
@@ -237,9 +237,9 @@
   display: flex;
   justify-content: center;
   //align-items: center;
- // height: 803px;
+  height: 803px;
   width: auto;
-  left: -82px;
+  //left: -82px;
   //display: flex;
   // flex-direction: row;
   justify-content: center;

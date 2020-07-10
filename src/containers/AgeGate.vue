@@ -1,10 +1,15 @@
 <template>
   <div id="age-gate-container">
+     
     <div class="age-gate-body">
       <div class="width-container">
         <!-- <div class="logo-container">
           <img :src="coorslogoImage" alt />
         </div>-->
+        <div v-if="window.width<700" >
+        <img height="90"
+          :src="coorsiconImage" alt />
+      </div>
         <div class="form-container">
           <div class="subtitle">
             <h2>
@@ -32,8 +37,8 @@
             <input
               ref="year"
               type="tel"
-              maxlength="4"
-              placeholder="YYYY"
+              maxlength="2"
+              placeholder="YY"
               v-on:keyup="focusNextSibling($event)"
               v-model="year"
             />
@@ -106,7 +111,7 @@
 
 <script>
 import Moment from "moment";
-
+import coorsicon from "@/assets/CoorsLight_Logo_nav_3.png";
 import coorslogo from "@/assets/miller-high-life-logo.png";
 import coorsphrase from "@/assets/miller-high-logo-phrase.png";
 import coorscenteredlogo from "@/assets/miller-high-life-centered-logo.png";
@@ -131,6 +136,7 @@ export default {
       year: undefined,
       showWarning: false,
       coorslogoImage: coorslogo,
+       coorsiconImage: coorsicon,
       coorsphraseImage: coorsphrase,
       coorscenteredlogoImage: coorscenteredlogo,
       phonenumberImage: phonenumber,
@@ -138,8 +144,19 @@ export default {
       wichModal: "terms",
       response: undefined,
        mhlcenteredlogoImage: mhlcenteredlogo,
+       window: {
+            width: 0,
+            height: 0
+        }
     };
   },
+       created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
   computed: {
     ...mapGetters([""])
   },
@@ -147,6 +164,11 @@ export default {
     ...mapActions({
       setAgeGateTokenAction: "setAgeGateToken"
     }),
+
+     handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+        },
     noBirthdayInFacebook() {
       this.showWarning = true;
     },
@@ -186,7 +208,7 @@ export default {
       
       const { day, month, year } = this;
       if (day && day !== "" && month && month !== "" && year && year !== "") {
-        const bDay = Moment(`${day}/${month}/${year}`, "DD/MM/YYYY");
+        const bDay = Moment(`${day}/${month}/${year}`, "DD/MM/YY");
         const today = Moment();
         const age = today.diff(bDay, "years");
         if (isNaN(age) || age < 18) {

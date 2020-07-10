@@ -191,14 +191,14 @@
 @media (min-width: 320px) and (max-width: 600px) {
 
   .hero-container {
-     // height: -webkit-fill-available;
+      height: -webkit-fill-available;
     //   display: flex;
     //  justify-content: center;
     //   align-items: center;
-    margin-top: 74px;
-    height: 503px;
+    //margin-top: 74px;
+    //height: 503px;
     width: auto;
-    background-image: url('../assets/MADE TO CHILL.png');
+    background-image: url('../assets/MADE TO CHILL2.png');
     background-size: cover;
     background-position: center;
       .hero_logo-container {
